@@ -1,0 +1,971 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>系统测试 - 网络设备配置备份与管理系统</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css" rel="stylesheet">
+    <style>
+        .test-card {
+            margin-bottom: 20px;
+        }
+        .log-content {
+            max-height: 600px;
+            overflow-y: auto;
+            font-family: 'Courier New', monospace;
+            font-size: 0.85rem;
+            background-color: #f8f9fa;
+            padding: 15px;
+            border-radius: 5px;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+        .test-result {
+            margin-top: 10px;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .test-result.success {
+            background-color: #d4edda;
+            border: 1px solid #c3e6cb;
+            color: #155724;
+        }
+        .test-result.error {
+            background-color: #f8d7da;
+            border: 1px solid #f5c6cb;
+            color: #721c24;
+        }
+        .test-result.info {
+            background-color: #d1ecf1;
+            border: 1px solid #bee5eb;
+            color: #0c5460;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-dark bg-primary">
+        <div class="container-fluid">
+            <span class="navbar-brand mb-0 h1">
+                <i class="bi bi-bug"></i> 系统测试页面
+            </span>
+            <div class="d-flex">
+                <a href="/" class="btn btn-sm btn-outline-light">
+                    <i class="bi bi-house"></i> 返回主页
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid mt-4">
+        <div class="row">
+            <div class="col-md-12">
+                <h3 class="mb-4"><i class="bi bi-list-check"></i> 功能测试</h3>
+                
+                <!-- 设备管理测试 -->
+                <div class="card test-card">
+                    <div class="card-header bg-warning text-dark">
+                        <h5 class="mb-0"><i class="bi bi-device-hdd"></i> 设备管理测试</h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h6><i class="bi bi-list-ul"></i> 获取设备列表</h6>
+                                <p class="text-muted small">测试获取所有已配置的设备列表</p>
+                                <button class="btn btn-sm btn-warning" onclick="testGetDevices()">
+                                    <i class="bi bi-arrow-down-circle"></i> 测试获取设备列表
+                                </button>
+                                <div id="getDevicesResult" class="test-result mt-2" style="display: none;"></div>
+                            </div>
+                            <div class="col-md-6">
+                                <h6><i class="bi bi-plus-circle"></i> 添加测试设备</h6>
+                                <p class="text-muted small">添加一个测试设备（仅用于测试，不会真正连接）</p>
+                                <button class="btn btn-sm btn-warning" onclick="testAddDevice()">
+                                    <i class="bi bi-plus-circle"></i> 测试添加设备
+                                </button>
+                                <div id="addDeviceResult" class="test-result mt-2" style="display: none;"></div>
+                            </div>
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col-md-12">
+                                <div id="devicesList" class="border rounded p-3" style="max-height: 200px; overflow-y: auto; background-color: #f8f9fa;">
+                                    <p class="text-muted text-center mb-0">点击"测试获取设备列表"查看设备</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 备份功能测试 -->
+                <div class="card test-card">
+                    <div class="card-header bg-danger text-white">
+                        <h5 class="mb-0"><i class="bi bi-download"></i> 备份功能测试</h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h6><i class="bi bi-download"></i> 手动备份测试</h6>
+                                <p class="text-muted small">选择一个设备进行手动备份测试</p>
+                                <div class="mb-2">
+                                    <select class="form-select form-select-sm" id="backupDeviceSelect">
+                                        <option value="">请先获取设备列表</option>
+                                    </select>
+                                </div>
+                                <button class="btn btn-sm btn-danger" onclick="testManualBackup()">
+                                    <i class="bi bi-download"></i> 测试手动备份
+                                </button>
+                                <div id="manualBackupResult" class="test-result mt-2" style="display: none;"></div>
+                            </div>
+                            <div class="col-md-6">
+                                <h6><i class="bi bi-clock-history"></i> 获取备份历史</h6>
+                                <p class="text-muted small">获取指定设备的备份历史记录</p>
+                                <div class="mb-2">
+                                    <select class="form-select form-select-sm" id="historyDeviceSelect">
+                                        <option value="">请先获取设备列表</option>
+                                    </select>
+                                </div>
+                                <button class="btn btn-sm btn-danger" onclick="testGetBackupHistory()">
+                                    <i class="bi bi-clock-history"></i> 测试获取备份历史
+                                </button>
+                                <div id="backupHistoryResult" class="test-result mt-2" style="display: none;"></div>
+                            </div>
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col-md-12">
+                                <div id="backupHistoryList" class="border rounded p-3" style="max-height: 200px; overflow-y: auto; background-color: #f8f9fa;">
+                                    <p class="text-muted text-center mb-0">点击"测试获取备份历史"查看备份记录</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 配置对比测试 -->
+                <div class="card test-card">
+                    <div class="card-header bg-purple text-white" style="background-color: #6f42c1 !important;">
+                        <h5 class="mb-0"><i class="bi bi-file-diff"></i> 配置对比测试</h5>
+                    </div>
+                    <div class="card-body">
+                        <p class="text-muted">测试配置差异对比功能，需要设备至少有两个备份文件</p>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <label class="form-label">选择设备：</label>
+                                <select class="form-select form-select-sm" id="diffDeviceSelect">
+                                    <option value="">请先获取设备列表</option>
+                                </select>
+                            </div>
+                            <div class="col-md-4">
+                                <label class="form-label">备份文件1：</label>
+                                <select class="form-select form-select-sm" id="diffBackup1Select">
+                                    <option value="">请先获取备份历史</option>
+                                </select>
+                            </div>
+                            <div class="col-md-4">
+                                <label class="form-label">备份文件2：</label>
+                                <select class="form-select form-select-sm" id="diffBackup2Select">
+                                    <option value="">请先获取备份历史</option>
+                                </select>
+                            </div>
+                        </div>
+                        <button class="btn btn-sm mt-3" style="background-color: #6f42c1; color: white;" onclick="testConfigDiff()">
+                            <i class="bi bi-file-diff"></i> 测试配置对比
+                        </button>
+                        <div id="configDiffResult" class="test-result mt-2" style="display: none;"></div>
+                        <div id="diffContent" class="border rounded p-3 mt-3" style="max-height: 300px; overflow-y: auto; background-color: #f8f9fa; font-family: monospace; font-size: 0.85rem; display: none;">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 配置恢复测试 -->
+                <div class="card test-card">
+                    <div class="card-header bg-dark text-white">
+                        <h5 class="mb-0"><i class="bi bi-arrow-counterclockwise"></i> 配置恢复测试</h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="alert alert-warning">
+                            <i class="bi bi-exclamation-triangle"></i> 
+                            <strong>警告：</strong>配置恢复会修改设备配置，请谨慎使用！此测试仅验证API功能，不会真正恢复配置。
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label class="form-label">选择设备：</label>
+                                <select class="form-select form-select-sm" id="restoreDeviceSelect">
+                                    <option value="">请先获取设备列表</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label">选择备份文件：</label>
+                                <select class="form-select form-select-sm" id="restoreBackupSelect">
+                                    <option value="">请先获取备份历史</option>
+                                </select>
+                            </div>
+                        </div>
+                        <button class="btn btn-sm btn-dark mt-3" onclick="testRestoreConfig()">
+                            <i class="bi bi-arrow-counterclockwise"></i> 测试配置恢复（仅API测试）
+                        </button>
+                        <div id="restoreConfigResult" class="test-result mt-2" style="display: none;"></div>
+                    </div>
+                </div>
+
+                <!-- 邮件告警测试 -->
+                <div class="card test-card">
+                    <div class="card-header bg-primary text-white">
+                        <h5 class="mb-0"><i class="bi bi-envelope-check"></i> 邮件告警测试</h5>
+                    </div>
+                    <div class="card-body">
+                        <p class="text-muted">测试邮件告警功能，发送一封测试邮件到配置的邮箱地址。</p>
+                        <button class="btn btn-primary" onclick="testEmailAlert()">
+                            <i class="bi bi-envelope-check"></i> 发送测试邮件
+                        </button>
+                        <div id="emailTestResult" class="test-result" style="display: none;"></div>
+                    </div>
+                </div>
+
+                <div class="card test-card">
+                    <div class="card-header bg-success text-white">
+                        <h5 class="mb-0"><i class="bi bi-play-circle"></i> 定时备份测试</h5>
+                    </div>
+                    <div class="card-body">
+                        <p class="text-muted">手动触发定时备份任务，立即备份所有已配置的设备。</p>
+                        <div class="alert alert-warning">
+                            <i class="bi bi-exclamation-triangle"></i> 
+                            <strong>注意：</strong>此操作将备份所有设备，可能需要较长时间，请耐心等待。
+                        </div>
+                        <button class="btn btn-success" onclick="triggerScheduledBackup()">
+                            <i class="bi bi-play-circle"></i> 触发定时备份
+                        </button>
+                        <div id="backupTestResult" class="test-result" style="display: none;"></div>
+                    </div>
+                </div>
+
+                <div class="card test-card">
+                    <div class="card-header bg-info text-white">
+                        <h5 class="mb-0"><i class="bi bi-file-text"></i> 运行日志查看</h5>
+                    </div>
+                    <div class="card-body">
+                        <p class="text-muted">查看系统运行日志，了解系统运行情况和错误信息。</p>
+                        <div class="mb-3">
+                            <label for="logLines" class="form-label">显示行数：</label>
+                            <select class="form-select form-select-sm" id="logLines" style="width: auto; display: inline-block;">
+                                <option value="50">最近 50 行</option>
+                                <option value="100" selected>最近 100 行</option>
+                                <option value="200">最近 200 行</option>
+                                <option value="500">最近 500 行</option>
+                            </select>
+                            <button class="btn btn-info ms-2" onclick="viewLogs()">
+                                <i class="bi bi-arrow-clockwise"></i> 刷新日志
+                            </button>
+                        </div>
+                        <div id="logContent" class="log-content">
+                            <p class="text-muted text-center">点击"刷新日志"按钮加载日志内容</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card test-card">
+                    <div class="card-header bg-secondary text-white">
+                        <h5 class="mb-0"><i class="bi bi-info-circle"></i> 系统状态</h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <strong>设备总数:</strong> <span id="totalDevices">-</span>
+                            </div>
+                            <div class="col-md-3">
+                                <strong>备份总数:</strong> <span id="totalBackups">-</span>
+                            </div>
+                            <div class="col-md-3">
+                                <strong>定时任务:</strong> 
+                                <span id="schedulerStatus" class="badge bg-secondary">-</span>
+                            </div>
+                            <div class="col-md-3">
+                                <strong>下次备份:</strong> <span id="nextBackup">-</span>
+                            </div>
+                        </div>
+                        <button class="btn btn-sm btn-secondary mt-3" onclick="loadSystemStatus()">
+                            <i class="bi bi-arrow-clockwise"></i> 刷新状态
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 功能测试模态框（用于显示详细信息） -->
+    <div class="modal fade" id="testModal" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="testModalTitle">测试结果</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body" id="testModalBody">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">关闭</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // 页面加载时初始化
+        document.addEventListener('DOMContentLoaded', function() {
+            loadSystemStatus();
+        });
+
+        // 加载系统状态
+        async function loadSystemStatus() {
+            try {
+                const controller = new AbortController();
+                const timeoutId = setTimeout(() => controller.abort(), 5000);
+
+                const response = await fetch('/api/status', {
+                    signal: controller.signal
+                });
+                
+                clearTimeout(timeoutId);
+
+                if (!response.ok) {
+                    throw new Error(`HTTP错误: ${response.status}`);
+                }
+                
+                const data = await response.json();
+                
+                if (data.status === 'success') {
+                    document.getElementById('totalDevices').textContent = data.total_devices;
+                    document.getElementById('totalBackups').textContent = data.total_backups;
+                    
+                    const schedulerStatus = document.getElementById('schedulerStatus');
+                    if (data.scheduler_running) {
+                        schedulerStatus.textContent = '运行中';
+                        schedulerStatus.className = 'badge bg-success status-badge';
+                    } else {
+                        schedulerStatus.textContent = '已停止';
+                        schedulerStatus.className = 'badge bg-danger status-badge';
+                    }
+                    
+                    document.getElementById('nextBackup').textContent = data.next_backup_time || '未设置';
+                }
+            } catch (error) {
+                if (error.name === 'AbortError') {
+                    console.warn('加载系统状态超时');
+                } else {
+                    console.error('加载系统状态失败:', error);
+                }
+            }
+        }
+
+        // 测试邮件告警
+        async function testEmailAlert() {
+            const resultDiv = document.getElementById('emailTestResult');
+            resultDiv.style.display = 'none';
+            
+            if (!confirm('确定要发送测试邮件吗？')) {
+                return;
+            }
+            
+            resultDiv.style.display = 'block';
+            resultDiv.className = 'test-result info';
+            resultDiv.innerHTML = '<i class="bi bi-hourglass-split"></i> 正在发送测试邮件...';
+            
+            try {
+                const controller = new AbortController();
+                const timeoutId = setTimeout(() => controller.abort(), 15000);
+
+                const response = await fetch('/api/test/email', {
+                    method: 'POST',
+                    signal: controller.signal
+                });
+                
+                clearTimeout(timeoutId);
+
+                if (!response.ok) {
+                    throw new Error(`HTTP错误: ${response.status}`);
+                }
+                
+                const data = await response.json();
+                
+                if (data.status === 'success') {
+                    resultDiv.className = 'test-result success';
+                    resultDiv.innerHTML = `<i class="bi bi-check-circle"></i> <strong>成功：</strong>${data.message || '测试邮件发送成功，请检查收件箱'}`;
+                } else {
+                    resultDiv.className = 'test-result error';
+                    resultDiv.innerHTML = `<i class="bi bi-x-circle"></i> <strong>失败：</strong>${data.message || '测试邮件发送失败'}`;
+                }
+            } catch (error) {
+                if (error.name === 'AbortError') {
+                    resultDiv.className = 'test-result error';
+                    resultDiv.innerHTML = '<i class="bi bi-x-circle"></i> <strong>超时：</strong>测试邮件超时，请检查网络连接';
+                } else {
+                    resultDiv.className = 'test-result error';
+                    resultDiv.innerHTML = `<i class="bi bi-x-circle"></i> <strong>错误：</strong>${error.message || '未知错误'}`;
+                }
+                console.error('测试邮件失败:', error);
+            }
+        }
+
+        // 手动触发定时备份
+        async function triggerScheduledBackup() {
+            const resultDiv = document.getElementById('backupTestResult');
+            resultDiv.style.display = 'none';
+            
+            if (!confirm('确定要手动触发定时备份任务吗？\n\n这将备份所有已配置的设备，可能需要较长时间。')) {
+                return;
+            }
+            
+            resultDiv.style.display = 'block';
+            resultDiv.className = 'test-result info';
+            resultDiv.innerHTML = '<i class="bi bi-hourglass-split"></i> 正在执行定时备份任务，请稍候...（这可能需要几分钟）';
+            
+            try {
+                const controller = new AbortController();
+                const timeoutId = setTimeout(() => controller.abort(), 300000); // 5分钟超时
+
+                const response = await fetch('/api/test/trigger-backup', {
+                    method: 'POST',
+                    signal: controller.signal
+                });
+                
+                clearTimeout(timeoutId);
+
+                if (!response.ok) {
+                    throw new Error(`HTTP错误: ${response.status}`);
+                }
+                
+                const data = await response.json();
+                
+                if (data.status === 'success') {
+                    resultDiv.className = 'test-result success';
+                    resultDiv.innerHTML = `<i class="bi bi-check-circle"></i> <strong>成功：</strong>${data.message || '定时备份任务已启动，请查看日志了解执行情况'}`;
+                    // 刷新状态
+                    setTimeout(() => {
+                        loadSystemStatus();
+                    }, 1000);
+                } else {
+                    resultDiv.className = 'test-result error';
+                    resultDiv.innerHTML = `<i class="bi bi-x-circle"></i> <strong>失败：</strong>${data.message || '定时备份任务执行失败'}`;
+                }
+            } catch (error) {
+                if (error.name === 'AbortError') {
+                    resultDiv.className = 'test-result error';
+                    resultDiv.innerHTML = '<i class="bi bi-x-circle"></i> <strong>超时：</strong>定时备份任务超时，请查看日志了解详情';
+                } else {
+                    resultDiv.className = 'test-result error';
+                    resultDiv.innerHTML = `<i class="bi bi-x-circle"></i> <strong>错误：</strong>${error.message || '未知错误'}`;
+                }
+                console.error('触发定时备份失败:', error);
+            }
+        }
+
+        // 查看运行日志
+        async function viewLogs() {
+            const logContent = document.getElementById('logContent');
+            const lines = document.getElementById('logLines').value;
+            
+            logContent.innerHTML = '<p class="text-muted text-center"><i class="bi bi-hourglass-split"></i> 正在加载日志...</p>';
+            
+            try {
+                const controller = new AbortController();
+                const timeoutId = setTimeout(() => controller.abort(), 10000);
+
+                const response = await fetch(`/api/test/logs?lines=${lines}`, {
+                    signal: controller.signal
+                });
+                
+                clearTimeout(timeoutId);
+
+                if (!response.ok) {
+                    throw new Error(`HTTP错误: ${response.status}`);
+                }
+                
+                const data = await response.json();
+                
+                if (data.status === 'success') {
+                    if (data.logs) {
+                        logContent.textContent = data.logs;
+                        logContent.innerHTML = `<div style="margin-bottom: 10px; color: #666; font-size: 0.8rem;">
+                            显示最近 ${data.lines} 行，共 ${data.total_lines} 行
+                        </div>${escapeHtml(data.logs)}`;
+                    } else {
+                        logContent.innerHTML = '<p class="text-muted text-center">日志为空</p>';
+                    }
+                } else {
+                    logContent.innerHTML = `<p class="text-danger">获取日志失败: ${data.message || '未知错误'}</p>`;
+                }
+            } catch (error) {
+                if (error.name === 'AbortError') {
+                    logContent.innerHTML = '<p class="text-danger">获取日志超时</p>';
+                } else {
+                    logContent.innerHTML = `<p class="text-danger">获取日志失败: ${error.message || '未知错误'}</p>`;
+                }
+                console.error('获取日志失败:', error);
+            }
+        }
+
+        // 测试获取设备列表
+        async function testGetDevices() {
+            const resultDiv = document.getElementById('getDevicesResult');
+            const devicesList = document.getElementById('devicesList');
+            resultDiv.style.display = 'none';
+            
+            devicesList.innerHTML = '<p class="text-muted text-center"><i class="bi bi-hourglass-split"></i> 正在加载设备列表...</p>';
+            
+            try {
+                const controller = new AbortController();
+                const timeoutId = setTimeout(() => controller.abort(), 10000);
+
+                const response = await fetch('/api/devices', {
+                    signal: controller.signal
+                });
+                
+                clearTimeout(timeoutId);
+
+                if (!response.ok) {
+                    throw new Error(`HTTP错误: ${response.status}`);
+                }
+                
+                const data = await response.json();
+                
+                if (data.status === 'success') {
+                    const devices = data.devices || [];
+                    resultDiv.style.display = 'block';
+                    resultDiv.className = 'test-result success';
+                    resultDiv.innerHTML = `<i class="bi bi-check-circle"></i> <strong>成功：</strong>获取到 ${devices.length} 个设备`;
+                    
+                    if (devices.length > 0) {
+                        let html = '<div class="list-group list-group-flush">';
+                        devices.forEach(device => {
+                            html += `<div class="list-group-item"><strong>${device.name}</strong> - ${device.ip} (${device.device_type})</div>`;
+                        });
+                        html += '</div>';
+                        devicesList.innerHTML = html;
+                    } else {
+                        devicesList.innerHTML = '<p class="text-muted text-center">暂无设备</p>';
+                    }
+                    
+                    updateDeviceSelects(devices);
+                } else {
+                    resultDiv.style.display = 'block';
+                    resultDiv.className = 'test-result error';
+                    resultDiv.innerHTML = `<i class="bi bi-x-circle"></i> <strong>失败：</strong>${data.message || '获取设备列表失败'}`;
+                    devicesList.innerHTML = '<p class="text-danger text-center">获取设备列表失败</p>';
+                }
+            } catch (error) {
+                resultDiv.style.display = 'block';
+                resultDiv.className = 'test-result error';
+                resultDiv.innerHTML = `<i class="bi bi-x-circle"></i> <strong>错误：</strong>${error.message || '未知错误'}`;
+                devicesList.innerHTML = '<p class="text-danger text-center">获取设备列表失败</p>';
+                console.error('获取设备列表失败:', error);
+            }
+        }
+
+        // 更新所有设备选择框
+        function updateDeviceSelects(devices) {
+            const selects = ['backupDeviceSelect', 'historyDeviceSelect', 'diffDeviceSelect', 'restoreDeviceSelect'];
+            selects.forEach(selectId => {
+                const select = document.getElementById(selectId);
+                if (select) {
+                    select.innerHTML = '<option value="">请选择设备</option>';
+                    devices.forEach(device => {
+                        const option = document.createElement('option');
+                        option.value = device.name;
+                        option.textContent = `${device.name} (${device.ip})`;
+                        select.appendChild(option);
+                    });
+                }
+            });
+        }
+
+        // 测试添加设备
+        async function testAddDevice() {
+            const resultDiv = document.getElementById('addDeviceResult');
+            resultDiv.style.display = 'none';
+            
+            if (!confirm('确定要添加测试设备吗？\n\n设备名称: test_device\nIP: 192.168.1.100\n类型: cisco_ios')) {
+                return;
+            }
+            
+            resultDiv.style.display = 'block';
+            resultDiv.className = 'test-result info';
+            resultDiv.innerHTML = '<i class="bi bi-hourglass-split"></i> 正在添加测试设备...';
+            
+            try {
+                const controller = new AbortController();
+                const timeoutId = setTimeout(() => controller.abort(), 10000);
+
+                const response = await fetch('/api/devices', {
+                    method: 'POST',
+                    headers: {'Content-Type': 'application/json'},
+                    body: JSON.stringify({
+                        name: 'test_device',
+                        ip: '192.168.1.100',
+                        username: 'test',
+                        password: 'test',
+                        device_type: 'cisco_ios'
+                    }),
+                    signal: controller.signal
+                });
+                
+                clearTimeout(timeoutId);
+
+                if (!response.ok) throw new Error(`HTTP错误: ${response.status}`);
+                
+                const data = await response.json();
+                
+                if (data.status === 'success') {
+                    resultDiv.className = 'test-result success';
+                    resultDiv.innerHTML = `<i class="bi bi-check-circle"></i> <strong>成功：</strong>${data.message || '测试设备添加成功'}`;
+                    setTimeout(() => testGetDevices(), 500);
+                } else {
+                    resultDiv.className = 'test-result error';
+                    resultDiv.innerHTML = `<i class="bi bi-x-circle"></i> <strong>失败：</strong>${data.message || '添加设备失败'}`;
+                }
+            } catch (error) {
+                resultDiv.className = 'test-result error';
+                resultDiv.innerHTML = `<i class="bi bi-x-circle"></i> <strong>错误：</strong>${error.message || '未知错误'}`;
+                console.error('添加设备失败:', error);
+            }
+        }
+
+        // 测试手动备份
+        async function testManualBackup() {
+            const deviceName = document.getElementById('backupDeviceSelect').value;
+            const resultDiv = document.getElementById('manualBackupResult');
+            resultDiv.style.display = 'none';
+            
+            if (!deviceName) {
+                alert('请先选择设备');
+                return;
+            }
+            
+            if (!confirm(`确定要备份设备 "${deviceName}" 吗？`)) return;
+            
+            resultDiv.style.display = 'block';
+            resultDiv.className = 'test-result info';
+            resultDiv.innerHTML = '<i class="bi bi-hourglass-split"></i> 正在备份设备配置...';
+            
+            try {
+                const controller = new AbortController();
+                const timeoutId = setTimeout(() => controller.abort(), 60000);
+
+                const response = await fetch('/api/backup', {
+                    method: 'POST',
+                    headers: {'Content-Type': 'application/json'},
+                    body: JSON.stringify({device_name: deviceName}),
+                    signal: controller.signal
+                });
+                
+                clearTimeout(timeoutId);
+
+                if (!response.ok) throw new Error(`HTTP错误: ${response.status}`);
+                
+                const data = await response.json();
+                
+                if (data.status === 'success') {
+                    resultDiv.className = 'test-result success';
+                    resultDiv.innerHTML = `<i class="bi bi-check-circle"></i> <strong>成功：</strong>${data.message || '备份成功'} - 文件: ${data.backup_file || ''}`;
+                } else {
+                    resultDiv.className = 'test-result error';
+                    resultDiv.innerHTML = `<i class="bi bi-x-circle"></i> <strong>失败：</strong>${data.message || '备份失败'}`;
+                }
+            } catch (error) {
+                resultDiv.className = 'test-result error';
+                resultDiv.innerHTML = `<i class="bi bi-x-circle"></i> <strong>错误：</strong>${error.message || '未知错误'}`;
+                console.error('备份失败:', error);
+            }
+        }
+
+        // 测试获取备份历史
+        async function testGetBackupHistory() {
+            const deviceName = document.getElementById('historyDeviceSelect').value;
+            const resultDiv = document.getElementById('backupHistoryResult');
+            const historyList = document.getElementById('backupHistoryList');
+            resultDiv.style.display = 'none';
+            
+            if (!deviceName) {
+                alert('请先选择设备');
+                return;
+            }
+            
+            historyList.innerHTML = '<p class="text-muted text-center"><i class="bi bi-hourglass-split"></i> 正在加载备份历史...</p>';
+            
+            try {
+                const controller = new AbortController();
+                const timeoutId = setTimeout(() => controller.abort(), 10000);
+
+                const response = await fetch(`/api/backup/history?device_name=${encodeURIComponent(deviceName)}`, {
+                    signal: controller.signal
+                });
+                
+                clearTimeout(timeoutId);
+
+                if (!response.ok) throw new Error(`HTTP错误: ${response.status}`);
+                
+                const data = await response.json();
+                
+                if (data.status === 'success') {
+                    const history = data.history || [];
+                    resultDiv.style.display = 'block';
+                    resultDiv.className = 'test-result success';
+                    resultDiv.innerHTML = `<i class="bi bi-check-circle"></i> <strong>成功：</strong>获取到 ${history.length} 条备份记录`;
+                    
+                    if (history.length > 0) {
+                        let html = '<div class="list-group list-group-flush">';
+                        history.forEach(backup => {
+                            html += `<div class="list-group-item"><strong>${backup.file_name}</strong><br><small class="text-muted">${backup.timestamp} (${backup.size || '未知大小'})</small></div>`;
+                        });
+                        html += '</div>';
+                        historyList.innerHTML = html;
+                        updateBackupSelects(deviceName, history);
+                    } else {
+                        historyList.innerHTML = '<p class="text-muted text-center">暂无备份记录</p>';
+                    }
+                } else {
+                    resultDiv.style.display = 'block';
+                    resultDiv.className = 'test-result error';
+                    resultDiv.innerHTML = `<i class="bi bi-x-circle"></i> <strong>失败：</strong>${data.message || '获取备份历史失败'}`;
+                    historyList.innerHTML = '<p class="text-danger text-center">获取备份历史失败</p>';
+                }
+            } catch (error) {
+                resultDiv.style.display = 'block';
+                resultDiv.className = 'test-result error';
+                resultDiv.innerHTML = `<i class="bi bi-x-circle"></i> <strong>错误：</strong>${error.message || '未知错误'}`;
+                historyList.innerHTML = '<p class="text-danger text-center">获取备份历史失败</p>';
+                console.error('获取备份历史失败:', error);
+            }
+        }
+
+        // 更新备份选择框
+        function updateBackupSelects(deviceName, history) {
+            const diffDevice = document.getElementById('diffDeviceSelect').value;
+            if (diffDevice === deviceName) {
+                const select1 = document.getElementById('diffBackup1Select');
+                const select2 = document.getElementById('diffBackup2Select');
+                if (select1 && select2) {
+                    select1.innerHTML = '<option value="">请选择备份文件1</option>';
+                    select2.innerHTML = '<option value="">请选择备份文件2</option>';
+                    history.forEach(backup => {
+                        const option1 = document.createElement('option');
+                        option1.value = backup.file_name;
+                        option1.textContent = `${backup.file_name} (${backup.timestamp})`;
+                        select1.appendChild(option1);
+                        const option2 = option1.cloneNode(true);
+                        select2.appendChild(option2);
+                    });
+                }
+            }
+            
+            const restoreDevice = document.getElementById('restoreDeviceSelect').value;
+            if (restoreDevice === deviceName) {
+                const select = document.getElementById('restoreBackupSelect');
+                if (select) {
+                    select.innerHTML = '<option value="">请选择备份文件</option>';
+                    history.forEach(backup => {
+                        const option = document.createElement('option');
+                        option.value = backup.file_name;
+                        option.textContent = `${backup.file_name} (${backup.timestamp})`;
+                        select.appendChild(option);
+                    });
+                }
+            }
+        }
+
+        // 设备选择变化时自动加载备份历史
+        document.addEventListener('DOMContentLoaded', function() {
+            const diffDeviceSelect = document.getElementById('diffDeviceSelect');
+            const restoreDeviceSelect = document.getElementById('restoreDeviceSelect');
+            
+            if (diffDeviceSelect) {
+                diffDeviceSelect.addEventListener('change', function() {
+                    if (this.value) {
+                        loadBackupHistoryForDevice(this.value, 'diff');
+                    }
+                });
+            }
+            
+            if (restoreDeviceSelect) {
+                restoreDeviceSelect.addEventListener('change', function() {
+                    if (this.value) {
+                        loadBackupHistoryForDevice(this.value, 'restore');
+                    }
+                });
+            }
+        });
+
+        // 为特定设备加载备份历史
+        async function loadBackupHistoryForDevice(deviceName, type) {
+            try {
+                const response = await fetch(`/api/backup/history?device_name=${encodeURIComponent(deviceName)}`);
+                const data = await response.json();
+                
+                if (data.status === 'success') {
+                    const history = data.history || [];
+                    if (type === 'diff') {
+                        const select1 = document.getElementById('diffBackup1Select');
+                        const select2 = document.getElementById('diffBackup2Select');
+                        if (select1 && select2) {
+                            select1.innerHTML = '<option value="">请选择备份文件1</option>';
+                            select2.innerHTML = '<option value="">请选择备份文件2</option>';
+                            history.forEach(backup => {
+                                const option1 = document.createElement('option');
+                                option1.value = backup.file_name;
+                                option1.textContent = `${backup.file_name} (${backup.timestamp})`;
+                                select1.appendChild(option1);
+                                const option2 = option1.cloneNode(true);
+                                select2.appendChild(option2);
+                            });
+                        }
+                    } else if (type === 'restore') {
+                        const select = document.getElementById('restoreBackupSelect');
+                        if (select) {
+                            select.innerHTML = '<option value="">请选择备份文件</option>';
+                            history.forEach(backup => {
+                                const option = document.createElement('option');
+                                option.value = backup.file_name;
+                                option.textContent = `${backup.file_name} (${backup.timestamp})`;
+                                select.appendChild(option);
+                            });
+                        }
+                    }
+                }
+            } catch (error) {
+                console.error('加载备份历史失败:', error);
+            }
+        }
+
+        // 测试配置对比
+        async function testConfigDiff() {
+            const deviceName = document.getElementById('diffDeviceSelect').value;
+            const backup1 = document.getElementById('diffBackup1Select').value;
+            const backup2 = document.getElementById('diffBackup2Select').value;
+            const resultDiv = document.getElementById('configDiffResult');
+            const diffContent = document.getElementById('diffContent');
+            resultDiv.style.display = 'none';
+            diffContent.style.display = 'none';
+            
+            if (!deviceName) {
+                alert('请先选择设备');
+                return;
+            }
+            
+            if (!backup1 || !backup2) {
+                alert('请选择两个备份文件进行对比');
+                return;
+            }
+            
+            if (backup1 === backup2) {
+                alert('请选择两个不同的备份文件');
+                return;
+            }
+            
+            resultDiv.style.display = 'block';
+            resultDiv.className = 'test-result info';
+            resultDiv.innerHTML = '<i class="bi bi-hourglass-split"></i> 正在对比配置差异...';
+            
+            try {
+                const controller = new AbortController();
+                const timeoutId = setTimeout(() => controller.abort(), 30000);
+
+                const response = await fetch(`/api/diff?device_name=${encodeURIComponent(deviceName)}&backup1=${encodeURIComponent(backup1)}&backup2=${encodeURIComponent(backup2)}`, {
+                    signal: controller.signal
+                });
+                
+                clearTimeout(timeoutId);
+
+                if (!response.ok) throw new Error(`HTTP错误: ${response.status}`);
+                
+                const data = await response.json();
+                
+                if (data.status === 'success') {
+                    resultDiv.className = 'test-result success';
+                    resultDiv.innerHTML = `<i class="bi bi-check-circle"></i> <strong>成功：</strong>配置对比完成 - ${data.has_changes ? '有变更' : '无变更'}`;
+                    
+                    if (data.diff) {
+                        diffContent.style.display = 'block';
+                        diffContent.innerHTML = `<div style="margin-bottom: 10px; color: #666; font-size: 0.8rem;"><strong>差异摘要：</strong>${data.summary || '无摘要'}<br><strong>对比文件：</strong>${backup1} vs ${backup2}</div><pre style="margin: 0;">${escapeHtml(data.diff)}</pre>`;
+                    }
+                } else {
+                    resultDiv.className = 'test-result error';
+                    resultDiv.innerHTML = `<i class="bi bi-x-circle"></i> <strong>失败：</strong>${data.message || '配置对比失败'}`;
+                }
+            } catch (error) {
+                resultDiv.className = 'test-result error';
+                resultDiv.innerHTML = `<i class="bi bi-x-circle"></i> <strong>错误：</strong>${error.message || '未知错误'}`;
+                console.error('配置对比失败:', error);
+            }
+        }
+
+        // 测试配置恢复
+        async function testRestoreConfig() {
+            const deviceName = document.getElementById('restoreDeviceSelect').value;
+            const backupFile = document.getElementById('restoreBackupSelect').value;
+            const resultDiv = document.getElementById('restoreConfigResult');
+            resultDiv.style.display = 'none';
+            
+            if (!deviceName) {
+                alert('请先选择设备');
+                return;
+            }
+            
+            if (!backupFile) {
+                alert('请选择备份文件');
+                return;
+            }
+            
+            if (!confirm(`确定要恢复设备 "${deviceName}" 的配置吗？\n\n备份文件: ${backupFile}\n\n警告：此操作会修改设备配置！`)) {
+                return;
+            }
+            
+            resultDiv.style.display = 'block';
+            resultDiv.className = 'test-result info';
+            resultDiv.innerHTML = '<i class="bi bi-hourglass-split"></i> 正在恢复设备配置...';
+            
+            try {
+                const controller = new AbortController();
+                const timeoutId = setTimeout(() => controller.abort(), 120000);
+
+                const response = await fetch('/api/restore', {
+                    method: 'POST',
+                    headers: {'Content-Type': 'application/json'},
+                    body: JSON.stringify({
+                        device_name: deviceName,
+                        backup_file: backupFile
+                    }),
+                    signal: controller.signal
+                });
+                
+                clearTimeout(timeoutId);
+
+                if (!response.ok) throw new Error(`HTTP错误: ${response.status}`);
+                
+                const data = await response.json();
+                
+                if (data.status === 'success') {
+                    resultDiv.className = 'test-result success';
+                    resultDiv.innerHTML = `<i class="bi bi-check-circle"></i> <strong>成功：</strong>${data.message || '配置恢复成功'}`;
+                    if (data.output) {
+                        resultDiv.innerHTML += `<br><small>输出: ${escapeHtml(data.output)}</small>`;
+                    }
+                } else {
+                    resultDiv.className = 'test-result error';
+                    resultDiv.innerHTML = `<i class="bi bi-x-circle"></i> <strong>失败：</strong>${data.message || '配置恢复失败'}`;
+                }
+            } catch (error) {
+                resultDiv.className = 'test-result error';
+                resultDiv.innerHTML = `<i class="bi bi-x-circle"></i> <strong>错误：</strong>${error.message || '未知错误'}`;
+                console.error('配置恢复失败:', error);
+            }
+        }
+
+        // HTML转义函数
+        function escapeHtml(text) {
+            const div = document.createElement('div');
+            div.textContent = text;
+            return div.innerHTML;
+        }
+    </script>
+</body>
+</html>
+

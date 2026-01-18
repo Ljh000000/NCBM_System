@@ -1,0 +1,851 @@
+2025-12-28 17:12:52 - __main__ - INFO - ============================================================
+2025-12-28 17:12:52 - __main__ - INFO - 网络设备配置备份与管理系统启动
+2025-12-28 17:12:52 - __main__ - INFO - 日志文件: logs\network_backup.log
+2025-12-28 17:12:52 - __main__ - INFO - ============================================================
+2025-12-28 17:12:52 - scheduler - INFO - 使用时区: Asia/Shanghai
+2025-12-28 17:12:52 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-12-28 17:12:52 - scheduler - INFO - 定时任务已设置: 每天 16:11 执行备份 (时区: Asia/Shanghai)
+2025-12-28 17:12:52 - apscheduler.scheduler - INFO - Added job "每日自动备份" to job store "default"
+2025-12-28 17:12:52 - apscheduler.scheduler - INFO - Scheduler started
+2025-12-28 17:12:52 - scheduler - INFO - 定时任务调度器已启动
+2025-12-28 17:13:00 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.8.252:5000
+2025-12-28 17:13:00 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-12-28 17:13:00 - werkzeug - INFO -  * Restarting with stat
+2025-12-28 17:13:01 - __main__ - INFO - ============================================================
+2025-12-28 17:13:01 - __main__ - INFO - 网络设备配置备份与管理系统启动
+2025-12-28 17:13:01 - __main__ - INFO - 日志文件: logs\network_backup.log
+2025-12-28 17:13:01 - __main__ - INFO - ============================================================
+2025-12-28 17:13:01 - scheduler - INFO - 使用时区: Asia/Shanghai
+2025-12-28 17:13:01 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-12-28 17:13:01 - scheduler - INFO - 定时任务已设置: 每天 16:11 执行备份 (时区: Asia/Shanghai)
+2025-12-28 17:13:01 - apscheduler.scheduler - INFO - Added job "每日自动备份" to job store "default"
+2025-12-28 17:13:01 - apscheduler.scheduler - INFO - Scheduler started
+2025-12-28 17:13:01 - scheduler - INFO - 定时任务调度器已启动
+2025-12-28 17:13:01 - werkzeug - WARNING -  * Debugger is active!
+2025-12-28 17:13:01 - werkzeug - INFO -  * Debugger PIN: 106-299-466
+2025-12-28 17:15:24 - werkzeug - INFO - 127.0.0.1 - - [28/Dec/2025 17:15:24] "GET / HTTP/1.1" 200 -
+2025-12-28 17:15:24 - werkzeug - INFO - 127.0.0.1 - - [28/Dec/2025 17:15:24] "GET /api/devices HTTP/1.1" 200 -
+2025-12-28 17:15:24 - werkzeug - INFO - 127.0.0.1 - - [28/Dec/2025 17:15:24] "GET /api/status HTTP/1.1" 200 -
+2025-12-28 17:15:25 - werkzeug - INFO - 127.0.0.1 - - [28/Dec/2025 17:15:25] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-12-28 17:15:47 - werkzeug - INFO -  * Detected change in 'C:\\Users\\ljh\\Desktop\\network\\device_manager.py', reloading
+2025-12-28 17:15:47 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2025-12-28 17:15:47 - scheduler - INFO - 定时任务调度器已停止
+2025-12-28 17:15:48 - werkzeug - INFO -  * Restarting with stat
+2025-12-28 17:15:48 - __main__ - INFO - ============================================================
+2025-12-28 17:15:48 - __main__ - INFO - 网络设备配置备份与管理系统启动
+2025-12-28 17:15:48 - __main__ - INFO - 日志文件: logs\network_backup.log
+2025-12-28 17:15:48 - __main__ - INFO - ============================================================
+2025-12-28 17:15:48 - scheduler - INFO - 使用时区: Asia/Shanghai
+2025-12-28 17:15:48 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-12-28 17:15:48 - scheduler - INFO - 定时任务已设置: 每天 16:11 执行备份 (时区: Asia/Shanghai)
+2025-12-28 17:15:48 - apscheduler.scheduler - INFO - Added job "每日自动备份" to job store "default"
+2025-12-28 17:15:48 - apscheduler.scheduler - INFO - Scheduler started
+2025-12-28 17:15:48 - scheduler - INFO - 定时任务调度器已启动
+2025-12-28 17:15:48 - werkzeug - WARNING -  * Debugger is active!
+2025-12-28 17:15:48 - werkzeug - INFO -  * Debugger PIN: 106-299-466
+2025-12-28 17:15:54 - werkzeug - INFO - 127.0.0.1 - - [28/Dec/2025 17:15:54] "GET /api/status HTTP/1.1" 200 -
+2025-12-28 17:15:56 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2025-12-28 17:15:56 - scheduler - INFO - 定时任务调度器已停止
+2025-12-28 17:15:56 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2025-12-28 17:15:56 - scheduler - INFO - 定时任务调度器已停止
+2025-12-28 17:15:58 - __main__ - INFO - ============================================================
+2025-12-28 17:15:58 - __main__ - INFO - 网络设备配置备份与管理系统启动
+2025-12-28 17:15:58 - __main__ - INFO - 日志文件: logs\network_backup.log
+2025-12-28 17:15:58 - __main__ - INFO - ============================================================
+2025-12-28 17:15:58 - scheduler - INFO - 使用时区: Asia/Shanghai
+2025-12-28 17:15:58 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-12-28 17:15:58 - scheduler - INFO - 定时任务已设置: 每天 16:11 执行备份 (时区: Asia/Shanghai)
+2025-12-28 17:15:58 - apscheduler.scheduler - INFO - Added job "每日自动备份" to job store "default"
+2025-12-28 17:15:58 - apscheduler.scheduler - INFO - Scheduler started
+2025-12-28 17:15:58 - scheduler - INFO - 定时任务调度器已启动
+2025-12-28 17:16:06 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.8.252:5000
+2025-12-28 17:16:06 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-12-28 17:16:06 - werkzeug - INFO -  * Restarting with stat
+2025-12-28 17:16:06 - __main__ - INFO - ============================================================
+2025-12-28 17:16:06 - __main__ - INFO - 网络设备配置备份与管理系统启动
+2025-12-28 17:16:06 - __main__ - INFO - 日志文件: logs\network_backup.log
+2025-12-28 17:16:06 - __main__ - INFO - ============================================================
+2025-12-28 17:16:06 - scheduler - INFO - 使用时区: Asia/Shanghai
+2025-12-28 17:16:06 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-12-28 17:16:06 - scheduler - INFO - 定时任务已设置: 每天 16:11 执行备份 (时区: Asia/Shanghai)
+2025-12-28 17:16:06 - apscheduler.scheduler - INFO - Added job "每日自动备份" to job store "default"
+2025-12-28 17:16:06 - apscheduler.scheduler - INFO - Scheduler started
+2025-12-28 17:16:06 - scheduler - INFO - 定时任务调度器已启动
+2025-12-28 17:16:06 - werkzeug - WARNING -  * Debugger is active!
+2025-12-28 17:16:06 - werkzeug - INFO -  * Debugger PIN: 106-299-466
+2025-12-28 17:16:24 - werkzeug - INFO - 127.0.0.1 - - [28/Dec/2025 17:16:24] "GET /api/status HTTP/1.1" 200 -
+2025-12-28 17:16:54 - werkzeug - INFO - 127.0.0.1 - - [28/Dec/2025 17:16:54] "GET /api/status HTTP/1.1" 200 -
+2025-12-28 17:17:24 - werkzeug - INFO - 127.0.0.1 - - [28/Dec/2025 17:17:24] "GET /api/status HTTP/1.1" 200 -
+2025-12-28 17:17:54 - werkzeug - INFO - 127.0.0.1 - - [28/Dec/2025 17:17:54] "GET /api/status HTTP/1.1" 200 -
+2025-12-28 17:18:07 - werkzeug - INFO - 127.0.0.1 - - [28/Dec/2025 17:18:07] "GET / HTTP/1.1" 200 -
+2025-12-28 17:18:07 - werkzeug - INFO - 127.0.0.1 - - [28/Dec/2025 17:18:07] "GET /api/devices HTTP/1.1" 200 -
+2025-12-28 17:18:07 - werkzeug - INFO - 127.0.0.1 - - [28/Dec/2025 17:18:07] "GET /api/status HTTP/1.1" 200 -
+2025-12-28 17:18:14 - werkzeug - INFO - 127.0.0.1 - - [28/Dec/2025 17:18:14] "GET /test HTTP/1.1" 200 -
+2025-12-28 17:18:14 - werkzeug - INFO - 127.0.0.1 - - [28/Dec/2025 17:18:14] "GET /api/status HTTP/1.1" 200 -
+2025-12-28 17:18:17 - werkzeug - INFO - 127.0.0.1 - - [28/Dec/2025 17:18:17] "GET /api/devices HTTP/1.1" 200 -
+2025-12-28 17:18:29 - werkzeug - INFO - 127.0.0.1 - - [28/Dec/2025 17:18:29] "GET /api/status HTTP/1.1" 200 -
+2025-12-28 17:18:30 - werkzeug - INFO - 127.0.0.1 - - [28/Dec/2025 17:18:30] "GET /api/test/logs?lines=100 HTTP/1.1" 200 -
+2025-12-28 17:18:44 - werkzeug - INFO - 127.0.0.1 - - [28/Dec/2025 17:18:44] "POST /api/devices HTTP/1.1" 200 -
+2025-12-28 17:18:44 - werkzeug - INFO - 127.0.0.1 - - [28/Dec/2025 17:18:44] "GET /api/devices HTTP/1.1" 200 -
+2025-12-28 17:18:52 - werkzeug - INFO - 127.0.0.1 - - [28/Dec/2025 17:18:52] "GET /api/devices HTTP/1.1" 200 -
+2025-12-28 17:19:07 - __main__ - INFO - 手动备份请求: 设备 test_device
+2025-12-28 17:19:07 - __main__ - INFO - [test_device] 开始获取设备配置
+2025-12-28 17:19:07 - device_manager - INFO - [test_device] 执行命令获取配置: show running-config
+2025-12-28 17:19:07 - device_manager - INFO - [test_device] 设备未连接，尝试建立连接
+2025-12-28 17:19:07 - device_manager - INFO - [test_device] 开始连接设备: 192.168.1.100 (类型: cisco_ios)
+2025-12-28 17:19:07 - device_manager - INFO - [test_device] 建立SSH/Telnet连接...
+2025-12-28 17:19:14 - __main__ - INFO - 获取设备 test_device 的备份历史
+2025-12-28 17:19:14 - __main__ - INFO - 成功获取 0 条备份记录
+2025-12-28 17:19:14 - werkzeug - INFO - 127.0.0.1 - - [28/Dec/2025 17:19:14] "GET /api/backup/history?device_name=test_device HTTP/1.1" 200 -
+2025-12-28 17:19:17 - device_manager - ERROR - [test_device] 连接超时，可能原因: 网络不通、设备未启动、防火墙阻止
+2025-12-28 17:19:17 - device_manager - ERROR - [test_device] 设备连接失败，无法执行命令
+2025-12-28 17:19:17 - device_manager - ERROR - [test_device] 配置获取失败，返回为空
+2025-12-28 17:19:17 - __main__ - ERROR - [test_device] 无法获取设备配置
+2025-12-28 17:19:17 - werkzeug - INFO - 127.0.0.1 - - [28/Dec/2025 17:19:17] "[35m[1mPOST /api/backup HTTP/1.1[0m" 500 -
+2025-12-28 17:19:18 - __main__ - INFO - 获取设备 test_device 的备份历史
+2025-12-28 17:19:18 - __main__ - INFO - 成功获取 0 条备份记录
+2025-12-28 17:19:18 - werkzeug - INFO - 127.0.0.1 - - [28/Dec/2025 17:19:18] "GET /api/backup/history?device_name=test_device HTTP/1.1" 200 -
+2025-12-28 17:19:45 - werkzeug - INFO - 127.0.0.1 - - [28/Dec/2025 17:19:45] "GET / HTTP/1.1" 200 -
+2025-12-28 17:19:45 - werkzeug - INFO - 127.0.0.1 - - [28/Dec/2025 17:19:45] "GET /api/devices HTTP/1.1" 200 -
+2025-12-28 17:19:45 - werkzeug - INFO - 127.0.0.1 - - [28/Dec/2025 17:19:45] "GET /api/status HTTP/1.1" 200 -
+2025-12-28 17:20:15 - werkzeug - INFO - 127.0.0.1 - - [28/Dec/2025 17:20:15] "GET /api/status HTTP/1.1" 200 -
+2025-12-28 17:20:45 - werkzeug - INFO - 127.0.0.1 - - [28/Dec/2025 17:20:45] "GET /api/status HTTP/1.1" 200 -
+2025-12-28 17:20:46 - werkzeug - INFO - 127.0.0.1 - - [28/Dec/2025 17:20:46] "GET /test HTTP/1.1" 200 -
+2025-12-28 17:20:46 - werkzeug - INFO - 127.0.0.1 - - [28/Dec/2025 17:20:46] "GET /api/status HTTP/1.1" 200 -
+2025-12-28 17:33:08 - werkzeug - INFO - 127.0.0.1 - - [28/Dec/2025 17:33:08] "GET / HTTP/1.1" 200 -
+2025-12-28 17:33:08 - werkzeug - INFO - 127.0.0.1 - - [28/Dec/2025 17:33:08] "GET /api/devices HTTP/1.1" 200 -
+2025-12-28 17:33:08 - werkzeug - INFO - 127.0.0.1 - - [28/Dec/2025 17:33:08] "GET /api/status HTTP/1.1" 200 -
+2025-12-28 17:33:23 - werkzeug - INFO - 127.0.0.1 - - [28/Dec/2025 17:33:23] "POST /api/devices HTTP/1.1" 200 -
+2025-12-28 17:33:23 - werkzeug - INFO - 127.0.0.1 - - [28/Dec/2025 17:33:23] "GET /api/devices HTTP/1.1" 200 -
+2025-12-28 17:33:23 - werkzeug - INFO - 127.0.0.1 - - [28/Dec/2025 17:33:23] "GET /api/status HTTP/1.1" 200 -
+2025-12-28 17:33:23 - __main__ - INFO - 获取设备 r1 的备份历史
+2025-12-28 17:33:23 - __main__ - INFO - 成功获取 0 条备份记录
+2025-12-28 17:33:23 - werkzeug - INFO - 127.0.0.1 - - [28/Dec/2025 17:33:23] "GET /api/backup/history?device_name=r1 HTTP/1.1" 200 -
+2025-12-28 17:33:25 - __main__ - INFO - 获取设备 r1 的备份历史
+2025-12-28 17:33:25 - __main__ - INFO - 成功获取 0 条备份记录
+2025-12-28 17:33:25 - werkzeug - INFO - 127.0.0.1 - - [28/Dec/2025 17:33:25] "GET /api/backup/history?device_name=r1 HTTP/1.1" 200 -
+2025-12-28 17:33:28 - __main__ - INFO - 手动备份请求: 设备 r1
+2025-12-28 17:33:28 - __main__ - INFO - [r1] 开始获取设备配置
+2025-12-28 17:33:28 - device_manager - INFO - [r1] 执行命令获取配置: show running-config
+2025-12-28 17:33:28 - device_manager - INFO - [r1] 设备未连接，尝试建立连接
+2025-12-28 17:33:28 - device_manager - INFO - [r1] 开始连接设备: 192.168.8.251 (类型: huawei)
+2025-12-28 17:33:28 - device_manager - INFO - [r1] 建立SSH/Telnet连接...
+2025-12-28 17:33:28 - paramiko.transport - INFO - Connected (version 1.99, client DOPRA-1.5)
+2025-12-28 17:33:29 - paramiko.transport - INFO - Authentication (password) successful!
+2025-12-28 17:33:30 - device_manager - INFO - [r1] 成功连接到设备 192.168.8.251
+2025-12-28 17:33:30 - device_manager - INFO - [r1] 执行命令: show running-config
+2025-12-28 17:33:34 - __main__ - INFO - 获取设备 r1 的备份历史
+2025-12-28 17:33:34 - __main__ - INFO - 成功获取 0 条备份记录
+2025-12-28 17:33:34 - werkzeug - INFO - 127.0.0.1 - - [28/Dec/2025 17:33:34] "GET /api/backup/history?device_name=r1 HTTP/1.1" 200 -
+2025-12-28 17:33:35 - werkzeug - INFO - 127.0.0.1 - - [28/Dec/2025 17:33:35] "GET / HTTP/1.1" 200 -
+2025-12-28 17:33:35 - werkzeug - INFO - 127.0.0.1 - - [28/Dec/2025 17:33:35] "GET /api/devices HTTP/1.1" 200 -
+2025-12-28 17:33:35 - werkzeug - INFO - 127.0.0.1 - - [28/Dec/2025 17:33:35] "GET /api/status HTTP/1.1" 200 -
+2025-12-28 17:33:36 - __main__ - INFO - 获取设备 r1 的备份历史
+2025-12-28 17:33:36 - __main__ - INFO - 成功获取 0 条备份记录
+2025-12-28 17:33:36 - werkzeug - INFO - 127.0.0.1 - - [28/Dec/2025 17:33:36] "GET /api/backup/history?device_name=r1 HTTP/1.1" 200 -
+2025-12-28 17:33:38 - werkzeug - INFO - 127.0.0.1 - - [28/Dec/2025 17:33:38] "GET /api/devices HTTP/1.1" 200 -
+2025-12-28 17:33:38 - __main__ - INFO - 获取设备 r1 的备份历史
+2025-12-28 17:33:38 - __main__ - INFO - 成功获取 0 条备份记录
+2025-12-28 17:33:38 - werkzeug - INFO - 127.0.0.1 - - [28/Dec/2025 17:33:38] "GET /api/status HTTP/1.1" 200 -
+2025-12-28 17:33:38 - werkzeug - INFO - 127.0.0.1 - - [28/Dec/2025 17:33:38] "GET /api/backup/history?device_name=r1 HTTP/1.1" 200 -
+2025-12-28 17:33:39 - __main__ - INFO - 获取设备 r1 的备份历史
+2025-12-28 17:33:39 - __main__ - INFO - 成功获取 0 条备份记录
+2025-12-28 17:33:39 - werkzeug - INFO - 127.0.0.1 - - [28/Dec/2025 17:33:39] "GET /api/backup/history?device_name=r1 HTTP/1.1" 200 -
+2025-12-28 17:33:40 - device_manager - ERROR - [r1] 执行命令时发生错误: 
+Pattern not detected: 'Info:\\ The\\ configuration\\ takes\\ effect\\ on\\ the\\ current\\ user\\ terminal\\ interface\\ only\\.' in output.
+
+Things you might try to fix this:
+1. Explicitly set your pattern using the expect_string argument.
+2. Increase the read_timeout to a larger value.
+
+You can also look at the Netmiko session_log or debug log for more information.
+
+Traceback (most recent call last):
+  File "C:\Users\ljh\Desktop\network\device_manager.py", line 99, in execute_command
+    output = connection.send_command(command)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ljh\Desktop\network\venv\Lib\site-packages\netmiko\utilities.py", line 592, in wrapper_decorator
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ljh\Desktop\network\venv\Lib\site-packages\netmiko\base_connection.py", line 1790, in send_command
+    raise ReadTimeout(msg)
+netmiko.exceptions.ReadTimeout: 
+Pattern not detected: 'Info:\\ The\\ configuration\\ takes\\ effect\\ on\\ the\\ current\\ user\\ terminal\\ interface\\ only\\.' in output.
+
+Things you might try to fix this:
+1. Explicitly set your pattern using the expect_string argument.
+2. Increase the read_timeout to a larger value.
+
+You can also look at the Netmiko session_log or debug log for more information.
+
+
+2025-12-28 17:33:40 - device_manager - WARNING - [r1] 清除连接缓存
+2025-12-28 17:33:40 - device_manager - ERROR - [r1] 配置获取失败，返回为空
+2025-12-28 17:33:40 - __main__ - ERROR - [r1] 无法获取设备配置
+2025-12-28 17:33:40 - werkzeug - INFO - 127.0.0.1 - - [28/Dec/2025 17:33:40] "[35m[1mPOST /api/backup HTTP/1.1[0m" 500 -
+2025-12-28 17:33:43 - werkzeug - INFO - 127.0.0.1 - - [28/Dec/2025 17:33:43] "GET /test HTTP/1.1" 200 -
+2025-12-28 17:33:43 - werkzeug - INFO - 127.0.0.1 - - [28/Dec/2025 17:33:43] "GET /api/status HTTP/1.1" 200 -
+2025-12-28 17:33:46 - werkzeug - INFO - 127.0.0.1 - - [28/Dec/2025 17:33:46] "GET /api/devices HTTP/1.1" 200 -
+2025-12-28 17:33:52 - __main__ - INFO - 手动备份请求: 设备 r1
+2025-12-28 17:33:52 - __main__ - INFO - [r1] 开始获取设备配置
+2025-12-28 17:33:52 - device_manager - INFO - [r1] 执行命令获取配置: show running-config
+2025-12-28 17:33:52 - device_manager - INFO - [r1] 设备未连接，尝试建立连接
+2025-12-28 17:33:52 - device_manager - INFO - [r1] 开始连接设备: 192.168.8.251 (类型: huawei)
+2025-12-28 17:33:52 - device_manager - INFO - [r1] 建立SSH/Telnet连接...
+2025-12-28 17:33:52 - paramiko.transport - INFO - Connected (version 1.99, client DOPRA-1.5)
+2025-12-28 17:33:54 - paramiko.transport - INFO - Authentication (password) successful!
+2025-12-28 17:33:55 - device_manager - INFO - [r1] 成功连接到设备 192.168.8.251
+2025-12-28 17:33:55 - device_manager - INFO - [r1] 执行命令: show running-config
+2025-12-28 17:33:55 - device_manager - INFO - [r1] 命令执行成功，输出长度: 60 字符
+2025-12-28 17:33:55 - device_manager - INFO - [r1] 配置获取成功，长度: 60 字符
+2025-12-28 17:33:55 - __main__ - INFO - [r1] 配置获取成功，开始保存备份
+2025-12-28 17:33:55 - backup_manager - INFO - [r1] 保存备份文件: backups\r1\20251228_173355.cfg
+2025-12-28 17:33:55 - backup_manager - INFO - [r1] 备份文件保存成功: backups\r1\20251228_173355.cfg (大小: 61 字节)
+2025-12-28 17:33:55 - __main__ - INFO - [r1] 备份成功: backups\r1\20251228_173355.cfg
+2025-12-28 17:33:55 - backup_manager - INFO - 成功获取 1 条备份历史记录
+2025-12-28 17:33:55 - werkzeug - INFO - 127.0.0.1 - - [28/Dec/2025 17:33:55] "POST /api/backup HTTP/1.1" 200 -
+2025-12-28 17:34:02 - __main__ - INFO - 获取设备 r1 的备份历史
+2025-12-28 17:34:02 - backup_manager - INFO - 成功获取 1 条备份历史记录
+2025-12-28 17:34:02 - __main__ - INFO - 成功获取 1 条备份记录
+2025-12-28 17:34:02 - werkzeug - INFO - 127.0.0.1 - - [28/Dec/2025 17:34:02] "GET /api/backup/history?device_name=r1 HTTP/1.1" 200 -
+2025-12-28 17:34:52 - __main__ - INFO - 手动备份请求: 设备 r1
+2025-12-28 17:34:52 - __main__ - INFO - [r1] 开始获取设备配置
+2025-12-28 17:34:52 - device_manager - INFO - [r1] 执行命令获取配置: show running-config
+2025-12-28 17:34:52 - device_manager - INFO - [r1] 执行命令: show running-config
+2025-12-28 17:34:53 - device_manager - INFO - [r1] 命令执行成功，输出长度: 60 字符
+2025-12-28 17:34:53 - device_manager - INFO - [r1] 配置获取成功，长度: 60 字符
+2025-12-28 17:34:53 - __main__ - INFO - [r1] 配置获取成功，开始保存备份
+2025-12-28 17:34:53 - backup_manager - INFO - [r1] 保存备份文件: backups\r1\20251228_173453.cfg
+2025-12-28 17:34:53 - backup_manager - INFO - [r1] 备份文件保存成功: backups\r1\20251228_173453.cfg (大小: 61 字节)
+2025-12-28 17:34:53 - __main__ - INFO - [r1] 备份成功: backups\r1\20251228_173453.cfg
+2025-12-28 17:34:53 - backup_manager - INFO - 成功获取 2 条备份历史记录
+2025-12-28 17:34:53 - werkzeug - INFO - 127.0.0.1 - - [28/Dec/2025 17:34:53] "POST /api/backup HTTP/1.1" 200 -
+2025-12-28 17:34:53 - __main__ - INFO - 获取设备 r1 的备份历史
+2025-12-28 17:34:53 - backup_manager - INFO - 成功获取 2 条备份历史记录
+2025-12-28 17:34:53 - __main__ - INFO - 成功获取 2 条备份记录
+2025-12-28 17:34:53 - werkzeug - INFO - 127.0.0.1 - - [28/Dec/2025 17:34:53] "GET /api/backup/history?device_name=r1 HTTP/1.1" 200 -
+2025-12-28 17:34:56 - __main__ - INFO - 获取设备 r1 的备份历史
+2025-12-28 17:34:56 - backup_manager - INFO - 成功获取 2 条备份历史记录
+2025-12-28 17:34:56 - __main__ - INFO - 成功获取 2 条备份记录
+2025-12-28 17:34:56 - werkzeug - INFO - 127.0.0.1 - - [28/Dec/2025 17:34:56] "GET /api/backup/history?device_name=r1 HTTP/1.1" 200 -
+2025-12-28 17:35:00 - werkzeug - INFO - 127.0.0.1 - - [28/Dec/2025 17:35:00] "GET /api/diff?device_name=r1&backup1=20251228_173453.cfg&backup2=20251228_173355.cfg HTTP/1.1" 200 -
+2025-12-28 17:35:01 - paramiko.transport - ERROR - Socket exception: 远程主机强迫关闭了一个现有的连接。 (10054)
+2025-12-28 17:35:01 - paramiko.transport - ERROR - Socket exception: 远程主机强迫关闭了一个现有的连接。 (10054)
+2025-12-28 17:35:16 - werkzeug - INFO - 127.0.0.1 - - [28/Dec/2025 17:35:16] "GET /api/diff?device_name=r1&backup1=20251228_173453.cfg&backup2=20251228_173355.cfg HTTP/1.1" 200 -
+2025-12-28 17:35:22 - __main__ - INFO - 获取设备 r1 的备份历史
+2025-12-28 17:35:22 - backup_manager - INFO - 成功获取 2 条备份历史记录
+2025-12-28 17:35:22 - __main__ - INFO - 成功获取 2 条备份记录
+2025-12-28 17:35:22 - werkzeug - INFO - 127.0.0.1 - - [28/Dec/2025 17:35:22] "GET /api/backup/history?device_name=r1 HTTP/1.1" 200 -
+2025-12-28 17:37:02 - __main__ - INFO - 手动备份请求: 设备 r1
+2025-12-28 17:37:02 - __main__ - INFO - [r1] 开始获取设备配置
+2025-12-28 17:37:02 - device_manager - INFO - [r1] 执行命令获取配置: show running-config
+2025-12-28 17:37:02 - device_manager - INFO - [r1] 执行命令: show running-config
+2025-12-28 17:37:02 - device_manager - ERROR - [r1] 执行命令时发生错误: Socket is closed
+Traceback (most recent call last):
+  File "C:\Users\ljh\Desktop\network\device_manager.py", line 99, in execute_command
+    output = connection.send_command(command)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ljh\Desktop\network\venv\Lib\site-packages\netmiko\utilities.py", line 592, in wrapper_decorator
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ljh\Desktop\network\venv\Lib\site-packages\netmiko\base_connection.py", line 1728, in send_command
+    search_pattern = self._prompt_handler(auto_find_prompt)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ljh\Desktop\network\venv\Lib\site-packages\netmiko\base_connection.py", line 1608, in _prompt_handler
+    prompt = self.find_prompt()
+             ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ljh\Desktop\network\venv\Lib\site-packages\netmiko\base_connection.py", line 1391, in find_prompt
+    self.write_channel(self.RETURN)
+  File "C:\Users\ljh\Desktop\network\venv\Lib\site-packages\netmiko\base_connection.py", line 96, in wrapper_decorator
+    return_val = func(self, *args, **kwargs)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ljh\Desktop\network\venv\Lib\site-packages\netmiko\base_connection.py", line 110, in wrapper_decorator
+    func(self, out_data)
+  File "C:\Users\ljh\Desktop\network\venv\Lib\site-packages\netmiko\base_connection.py", line 560, in write_channel
+    self.channel.write_channel(out_data)
+  File "C:\Users\ljh\Desktop\network\venv\Lib\site-packages\netmiko\channel.py", line 74, in write_channel
+    self.remote_conn.sendall(write_bytes(out_data, encoding=self.encoding))
+  File "C:\Users\ljh\Desktop\network\venv\Lib\site-packages\paramiko\channel.py", line 844, in sendall
+    sent = self.send(s)
+           ^^^^^^^^^^^^
+  File "C:\Users\ljh\Desktop\network\venv\Lib\site-packages\paramiko\channel.py", line 799, in send
+    return self._send(s, m)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\ljh\Desktop\network\venv\Lib\site-packages\paramiko\channel.py", line 1196, in _send
+    raise socket.error("Socket is closed")
+OSError: Socket is closed
+2025-12-28 17:37:02 - device_manager - WARNING - [r1] 清除连接缓存
+2025-12-28 17:37:02 - device_manager - ERROR - [r1] 配置获取失败，返回为空
+2025-12-28 17:37:02 - __main__ - ERROR - [r1] 无法获取设备配置
+2025-12-28 17:37:02 - werkzeug - INFO - 127.0.0.1 - - [28/Dec/2025 17:37:02] "[35m[1mPOST /api/backup HTTP/1.1[0m" 500 -
+2025-12-28 17:37:08 - __main__ - INFO - 手动备份请求: 设备 r1
+2025-12-28 17:37:08 - __main__ - INFO - [r1] 开始获取设备配置
+2025-12-28 17:37:08 - device_manager - INFO - [r1] 执行命令获取配置: show running-config
+2025-12-28 17:37:08 - device_manager - INFO - [r1] 设备未连接，尝试建立连接
+2025-12-28 17:37:08 - device_manager - INFO - [r1] 开始连接设备: 192.168.8.251 (类型: huawei)
+2025-12-28 17:37:08 - device_manager - INFO - [r1] 建立SSH/Telnet连接...
+2025-12-28 17:37:08 - paramiko.transport - INFO - Connected (version 1.99, client DOPRA-1.5)
+2025-12-28 17:37:08 - paramiko.transport - ERROR - Socket exception: 远程主机强迫关闭了一个现有的连接。 (10054)
+2025-12-28 17:37:08 - device_manager - ERROR - [r1] 连接超时，可能原因: 网络不通、设备未启动、防火墙阻止
+2025-12-28 17:37:08 - device_manager - ERROR - [r1] 设备连接失败，无法执行命令
+2025-12-28 17:37:08 - device_manager - ERROR - [r1] 配置获取失败，返回为空
+2025-12-28 17:37:08 - __main__ - ERROR - [r1] 无法获取设备配置
+2025-12-28 17:37:08 - werkzeug - INFO - 127.0.0.1 - - [28/Dec/2025 17:37:08] "[35m[1mPOST /api/backup HTTP/1.1[0m" 500 -
+2025-12-28 17:37:26 - __main__ - INFO - 手动备份请求: 设备 r1
+2025-12-28 17:37:26 - __main__ - INFO - [r1] 开始获取设备配置
+2025-12-28 17:37:26 - device_manager - INFO - [r1] 执行命令获取配置: show running-config
+2025-12-28 17:37:26 - device_manager - INFO - [r1] 设备未连接，尝试建立连接
+2025-12-28 17:37:26 - device_manager - INFO - [r1] 开始连接设备: 192.168.8.251 (类型: huawei)
+2025-12-28 17:37:26 - device_manager - INFO - [r1] 建立SSH/Telnet连接...
+2025-12-28 17:37:26 - paramiko.transport - INFO - Connected (version 1.99, client DOPRA-1.5)
+2025-12-28 17:37:26 - paramiko.transport - ERROR - Socket exception: 远程主机强迫关闭了一个现有的连接。 (10054)
+2025-12-28 17:37:26 - device_manager - ERROR - [r1] 连接超时，可能原因: 网络不通、设备未启动、防火墙阻止
+2025-12-28 17:37:26 - device_manager - ERROR - [r1] 设备连接失败，无法执行命令
+2025-12-28 17:37:26 - device_manager - ERROR - [r1] 配置获取失败，返回为空
+2025-12-28 17:37:26 - __main__ - ERROR - [r1] 无法获取设备配置
+2025-12-28 17:37:26 - werkzeug - INFO - 127.0.0.1 - - [28/Dec/2025 17:37:26] "[35m[1mPOST /api/backup HTTP/1.1[0m" 500 -
+2025-12-28 17:37:30 - __main__ - INFO - 获取设备 r1 的备份历史
+2025-12-28 17:37:30 - backup_manager - INFO - 成功获取 2 条备份历史记录
+2025-12-28 17:37:30 - __main__ - INFO - 成功获取 2 条备份记录
+2025-12-28 17:37:30 - werkzeug - INFO - 127.0.0.1 - - [28/Dec/2025 17:37:30] "GET /api/backup/history?device_name=r1 HTTP/1.1" 200 -
+2025-12-28 17:37:31 - __main__ - INFO - 获取设备 r1 的备份历史
+2025-12-28 17:37:31 - backup_manager - INFO - 成功获取 2 条备份历史记录
+2025-12-28 17:37:31 - __main__ - INFO - 成功获取 2 条备份记录
+2025-12-28 17:37:31 - werkzeug - INFO - 127.0.0.1 - - [28/Dec/2025 17:37:31] "GET /api/backup/history?device_name=r1 HTTP/1.1" 200 -
+2025-12-28 17:37:31 - __main__ - INFO - 获取设备 r1 的备份历史
+2025-12-28 17:37:31 - backup_manager - INFO - 成功获取 2 条备份历史记录
+2025-12-28 17:37:31 - __main__ - INFO - 成功获取 2 条备份记录
+2025-12-28 17:37:31 - werkzeug - INFO - 127.0.0.1 - - [28/Dec/2025 17:37:31] "GET /api/backup/history?device_name=r1 HTTP/1.1" 200 -
+2025-12-28 17:37:38 - __main__ - INFO - 获取设备 r1 的备份历史
+2025-12-28 17:37:38 - backup_manager - INFO - 成功获取 2 条备份历史记录
+2025-12-28 17:37:38 - __main__ - INFO - 成功获取 2 条备份记录
+2025-12-28 17:37:38 - werkzeug - INFO - 127.0.0.1 - - [28/Dec/2025 17:37:38] "GET /api/backup/history?device_name=r1 HTTP/1.1" 200 -
+2025-12-28 17:37:40 - backup_manager - INFO - 删除备份文件: backups\r1\20251228_173453.cfg
+2025-12-28 17:37:40 - werkzeug - INFO - 127.0.0.1 - - [28/Dec/2025 17:37:40] "DELETE /api/backup?device_name=r1&backup_file=20251228_173453.cfg HTTP/1.1" 200 -
+2025-12-28 17:37:40 - __main__ - INFO - 获取设备 r1 的备份历史
+2025-12-28 17:37:40 - backup_manager - INFO - 成功获取 1 条备份历史记录
+2025-12-28 17:37:40 - __main__ - INFO - 成功获取 1 条备份记录
+2025-12-28 17:37:40 - werkzeug - INFO - 127.0.0.1 - - [28/Dec/2025 17:37:40] "GET /api/backup/history?device_name=r1 HTTP/1.1" 200 -
+2025-12-28 17:37:40 - werkzeug - INFO - 127.0.0.1 - - [28/Dec/2025 17:37:40] "GET /api/status HTTP/1.1" 200 -
+2025-12-28 17:37:42 - backup_manager - INFO - 删除备份文件: backups\r1\20251228_173355.cfg
+2025-12-28 17:37:42 - werkzeug - INFO - 127.0.0.1 - - [28/Dec/2025 17:37:42] "DELETE /api/backup?device_name=r1&backup_file=20251228_173355.cfg HTTP/1.1" 200 -
+2025-12-28 17:37:42 - __main__ - INFO - 获取设备 r1 的备份历史
+2025-12-28 17:37:42 - __main__ - INFO - 成功获取 0 条备份记录
+2025-12-28 17:37:42 - werkzeug - INFO - 127.0.0.1 - - [28/Dec/2025 17:37:42] "GET /api/backup/history?device_name=r1 HTTP/1.1" 200 -
+2025-12-28 17:37:42 - werkzeug - INFO - 127.0.0.1 - - [28/Dec/2025 17:37:42] "GET /api/status HTTP/1.1" 200 -
+2025-12-28 17:37:43 - werkzeug - INFO - 127.0.0.1 - - [28/Dec/2025 17:37:43] "GET /test HTTP/1.1" 200 -
+2025-12-28 17:37:43 - werkzeug - INFO - 127.0.0.1 - - [28/Dec/2025 17:37:43] "GET /api/status HTTP/1.1" 200 -
+2025-12-28 17:37:48 - werkzeug - INFO - 127.0.0.1 - - [28/Dec/2025 17:37:48] "GET /api/devices HTTP/1.1" 200 -
+2025-12-28 17:37:56 - __main__ - INFO - 手动备份请求: 设备 r1
+2025-12-28 17:37:56 - __main__ - INFO - [r1] 开始获取设备配置
+2025-12-28 17:37:56 - device_manager - INFO - [r1] 执行命令获取配置: show running-config
+2025-12-28 17:37:56 - device_manager - INFO - [r1] 设备未连接，尝试建立连接
+2025-12-28 17:37:56 - device_manager - INFO - [r1] 开始连接设备: 192.168.8.251 (类型: huawei)
+2025-12-28 17:37:56 - device_manager - INFO - [r1] 建立SSH/Telnet连接...
+2025-12-28 17:37:56 - paramiko.transport - INFO - Connected (version 1.99, client DOPRA-1.5)
+2025-12-28 17:37:56 - paramiko.transport - ERROR - Socket exception: 远程主机强迫关闭了一个现有的连接。 (10054)
+2025-12-28 17:37:56 - device_manager - ERROR - [r1] 连接超时，可能原因: 网络不通、设备未启动、防火墙阻止
+2025-12-28 17:37:56 - device_manager - ERROR - [r1] 设备连接失败，无法执行命令
+2025-12-28 17:37:56 - device_manager - ERROR - [r1] 配置获取失败，返回为空
+2025-12-28 17:37:56 - __main__ - ERROR - [r1] 无法获取设备配置
+2025-12-28 17:37:56 - werkzeug - INFO - 127.0.0.1 - - [28/Dec/2025 17:37:56] "[35m[1mPOST /api/backup HTTP/1.1[0m" 500 -
+2025-12-28 17:38:52 - __main__ - INFO - 手动备份请求: 设备 r1
+2025-12-28 17:38:52 - __main__ - INFO - [r1] 开始获取设备配置
+2025-12-28 17:38:52 - device_manager - INFO - [r1] 执行命令获取配置: show running-config
+2025-12-28 17:38:52 - device_manager - INFO - [r1] 设备未连接，尝试建立连接
+2025-12-28 17:38:52 - device_manager - INFO - [r1] 开始连接设备: 192.168.8.251 (类型: huawei)
+2025-12-28 17:38:52 - device_manager - INFO - [r1] 建立SSH/Telnet连接...
+2025-12-28 17:38:52 - device_manager - ERROR - [r1] 连接时发生错误: 
+Traceback (most recent call last):
+  File "C:\Users\ljh\Desktop\network\device_manager.py", line 51, in connect
+    connection = ConnectHandler(
+                 ^^^^^^^^^^^^^^^
+  File "C:\Users\ljh\Desktop\network\venv\Lib\site-packages\netmiko\ssh_dispatcher.py", line 388, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ljh\Desktop\network\venv\Lib\site-packages\netmiko\base_connection.py", line 462, in __init__
+    self._open()
+  File "C:\Users\ljh\Desktop\network\venv\Lib\site-packages\netmiko\base_connection.py", line 467, in _open
+    self.establish_connection()
+  File "C:\Users\ljh\Desktop\network\venv\Lib\site-packages\netmiko\base_connection.py", line 1104, in establish_connection
+    self.remote_conn_pre.connect(**ssh_connect_params)
+  File "C:\Users\ljh\Desktop\network\venv\Lib\site-packages\paramiko\client.py", line 449, in connect
+    t.start_client(timeout=timeout)
+  File "C:\Users\ljh\Desktop\network\venv\Lib\site-packages\paramiko\transport.py", line 768, in start_client
+    raise e
+  File "C:\Users\ljh\Desktop\network\venv\Lib\site-packages\paramiko\transport.py", line 2174, in run
+    self.packetizer.write_all(b(self.local_version + "\r\n"))
+  File "C:\Users\ljh\Desktop\network\venv\Lib\site-packages\paramiko\packet.py", line 382, in write_all
+    raise EOFError()
+EOFError
+2025-12-28 17:38:52 - device_manager - ERROR - [r1] 设备连接失败，无法执行命令
+2025-12-28 17:38:52 - device_manager - ERROR - [r1] 配置获取失败，返回为空
+2025-12-28 17:38:52 - __main__ - ERROR - [r1] 无法获取设备配置
+2025-12-28 17:38:52 - werkzeug - INFO - 127.0.0.1 - - [28/Dec/2025 17:38:52] "[35m[1mPOST /api/backup HTTP/1.1[0m" 500 -
+2025-12-28 17:39:53 - __main__ - INFO - 手动备份请求: 设备 r1
+2025-12-28 17:39:53 - __main__ - INFO - [r1] 开始获取设备配置
+2025-12-28 17:39:53 - device_manager - INFO - [r1] 执行命令获取配置: show running-config
+2025-12-28 17:39:53 - device_manager - INFO - [r1] 设备未连接，尝试建立连接
+2025-12-28 17:39:53 - device_manager - INFO - [r1] 开始连接设备: 192.168.8.251 (类型: huawei)
+2025-12-28 17:39:53 - device_manager - INFO - [r1] 建立SSH/Telnet连接...
+2025-12-28 17:39:53 - paramiko.transport - INFO - Connected (version 1.99, client DOPRA-1.5)
+2025-12-28 17:39:53 - paramiko.transport - ERROR - Socket exception: 远程主机强迫关闭了一个现有的连接。 (10054)
+2025-12-28 17:39:53 - device_manager - ERROR - [r1] 连接超时，可能原因: 网络不通、设备未启动、防火墙阻止
+2025-12-28 17:39:53 - device_manager - ERROR - [r1] 设备连接失败，无法执行命令
+2025-12-28 17:39:53 - device_manager - ERROR - [r1] 配置获取失败，返回为空
+2025-12-28 17:39:53 - __main__ - ERROR - [r1] 无法获取设备配置
+2025-12-28 17:39:53 - werkzeug - INFO - 127.0.0.1 - - [28/Dec/2025 17:39:53] "[35m[1mPOST /api/backup HTTP/1.1[0m" 500 -
+2025-12-28 17:53:30 - __main__ - INFO - 手动备份请求: 设备 r1
+2025-12-28 17:53:30 - __main__ - INFO - [r1] 开始获取设备配置
+2025-12-28 17:53:30 - device_manager - INFO - [r1] 执行命令获取配置: show running-config
+2025-12-28 17:53:30 - device_manager - INFO - [r1] 设备未连接，尝试建立连接
+2025-12-28 17:53:30 - device_manager - INFO - [r1] 开始连接设备: 192.168.8.251 (类型: huawei)
+2025-12-28 17:53:30 - device_manager - INFO - [r1] 建立SSH/Telnet连接...
+2025-12-28 17:53:30 - paramiko.transport - INFO - Connected (version 1.99, client DOPRA-1.5)
+2025-12-28 17:53:31 - paramiko.transport - INFO - Authentication (password) successful!
+2025-12-28 17:53:32 - device_manager - INFO - [r1] 成功连接到设备 192.168.8.251
+2025-12-28 17:53:32 - device_manager - INFO - [r1] 执行命令: show running-config
+2025-12-28 17:53:33 - device_manager - INFO - [r1] 命令执行成功，输出长度: 60 字符
+2025-12-28 17:53:33 - device_manager - INFO - [r1] 配置获取成功，长度: 60 字符
+2025-12-28 17:53:33 - __main__ - INFO - [r1] 配置获取成功，开始保存备份
+2025-12-28 17:53:33 - backup_manager - INFO - [r1] 保存备份文件: backups\r1\20251228_175333.cfg
+2025-12-28 17:53:33 - backup_manager - INFO - [r1] 备份文件保存成功: backups\r1\20251228_175333.cfg (大小: 61 字节)
+2025-12-28 17:53:33 - __main__ - INFO - [r1] 备份成功: backups\r1\20251228_175333.cfg
+2025-12-28 17:53:33 - backup_manager - INFO - 成功获取 1 条备份历史记录
+2025-12-28 17:53:33 - werkzeug - INFO - 127.0.0.1 - - [28/Dec/2025 17:53:33] "POST /api/backup HTTP/1.1" 200 -
+2025-12-28 17:54:02 - __main__ - INFO - 手动备份请求: 设备 r1
+2025-12-28 17:54:02 - __main__ - INFO - [r1] 开始获取设备配置
+2025-12-28 17:54:02 - device_manager - INFO - [r1] 执行命令获取配置: show running-config
+2025-12-28 17:54:02 - device_manager - INFO - [r1] 执行命令: show running-config
+2025-12-28 17:54:02 - device_manager - INFO - [r1] 命令执行成功，输出长度: 60 字符
+2025-12-28 17:54:02 - device_manager - INFO - [r1] 配置获取成功，长度: 60 字符
+2025-12-28 17:54:02 - __main__ - INFO - [r1] 配置获取成功，开始保存备份
+2025-12-28 17:54:02 - backup_manager - INFO - [r1] 保存备份文件: backups\r1\20251228_175402.cfg
+2025-12-28 17:54:02 - backup_manager - INFO - [r1] 备份文件保存成功: backups\r1\20251228_175402.cfg (大小: 61 字节)
+2025-12-28 17:54:02 - __main__ - INFO - [r1] 备份成功: backups\r1\20251228_175402.cfg
+2025-12-28 17:54:02 - backup_manager - INFO - 成功获取 2 条备份历史记录
+2025-12-28 17:54:02 - werkzeug - INFO - 127.0.0.1 - - [28/Dec/2025 17:54:02] "POST /api/backup HTTP/1.1" 200 -
+2025-12-28 17:54:05 - __main__ - INFO - 获取设备 r1 的备份历史
+2025-12-28 17:54:05 - backup_manager - INFO - 成功获取 2 条备份历史记录
+2025-12-28 17:54:05 - __main__ - INFO - 成功获取 2 条备份记录
+2025-12-28 17:54:05 - werkzeug - INFO - 127.0.0.1 - - [28/Dec/2025 17:54:05] "GET /api/backup/history?device_name=r1 HTTP/1.1" 200 -
+2025-12-28 17:54:08 - __main__ - INFO - 获取设备 r1 的备份历史
+2025-12-28 17:54:08 - backup_manager - INFO - 成功获取 2 条备份历史记录
+2025-12-28 17:54:08 - __main__ - INFO - 成功获取 2 条备份记录
+2025-12-28 17:54:08 - werkzeug - INFO - 127.0.0.1 - - [28/Dec/2025 17:54:08] "GET /api/backup/history?device_name=r1 HTTP/1.1" 200 -
+2025-12-28 17:54:11 - werkzeug - INFO - 127.0.0.1 - - [28/Dec/2025 17:54:11] "GET /api/diff?device_name=r1&backup1=20251228_175402.cfg&backup2=20251228_175333.cfg HTTP/1.1" 200 -
+2025-12-28 17:54:35 - werkzeug - INFO - 127.0.0.1 - - [28/Dec/2025 17:54:35] "GET /api/diff?device_name=r1&backup1=20251228_175402.cfg&backup2=20251228_175333.cfg HTTP/1.1" 200 -
+2025-12-28 17:54:38 - __main__ - INFO - 手动备份请求: 设备 r1
+2025-12-28 17:54:38 - __main__ - INFO - [r1] 开始获取设备配置
+2025-12-28 17:54:38 - device_manager - INFO - [r1] 执行命令获取配置: show running-config
+2025-12-28 17:54:38 - device_manager - INFO - [r1] 执行命令: show running-config
+2025-12-28 17:54:39 - device_manager - INFO - [r1] 命令执行成功，输出长度: 60 字符
+2025-12-28 17:54:39 - device_manager - INFO - [r1] 配置获取成功，长度: 60 字符
+2025-12-28 17:54:39 - __main__ - INFO - [r1] 配置获取成功，开始保存备份
+2025-12-28 17:54:39 - backup_manager - INFO - [r1] 保存备份文件: backups\r1\20251228_175439.cfg
+2025-12-28 17:54:39 - backup_manager - INFO - [r1] 备份文件保存成功: backups\r1\20251228_175439.cfg (大小: 61 字节)
+2025-12-28 17:54:39 - __main__ - INFO - [r1] 备份成功: backups\r1\20251228_175439.cfg
+2025-12-28 17:54:39 - backup_manager - INFO - 成功获取 3 条备份历史记录
+2025-12-28 17:54:39 - werkzeug - INFO - 127.0.0.1 - - [28/Dec/2025 17:54:39] "POST /api/backup HTTP/1.1" 200 -
+2025-12-28 17:54:41 - __main__ - INFO - 获取设备 r1 的备份历史
+2025-12-28 17:54:41 - backup_manager - INFO - 成功获取 3 条备份历史记录
+2025-12-28 17:54:41 - __main__ - INFO - 成功获取 3 条备份记录
+2025-12-28 17:54:41 - werkzeug - INFO - 127.0.0.1 - - [28/Dec/2025 17:54:41] "GET /api/backup/history?device_name=r1 HTTP/1.1" 200 -
+2025-12-28 17:54:47 - paramiko.transport - ERROR - Socket exception: 远程主机强迫关闭了一个现有的连接。 (10054)
+2025-12-28 17:54:57 - __main__ - INFO - 获取设备 r1 的备份历史
+2025-12-28 17:54:57 - backup_manager - INFO - 成功获取 3 条备份历史记录
+2025-12-28 17:54:57 - __main__ - INFO - 成功获取 3 条备份记录
+2025-12-28 17:54:57 - werkzeug - INFO - 127.0.0.1 - - [28/Dec/2025 17:54:57] "GET /api/backup/history?device_name=r1 HTTP/1.1" 200 -
+2025-12-28 17:55:04 - device_manager - ERROR - 设备 r1 - 恢复配置时发生错误: Socket is closed
+2025-12-28 17:55:04 - werkzeug - INFO - 127.0.0.1 - - [28/Dec/2025 17:55:04] "[35m[1mPOST /api/restore HTTP/1.1[0m" 500 -
+2025-12-28 17:55:25 - werkzeug - INFO - 127.0.0.1 - - [28/Dec/2025 17:55:25] "GET /api/diff?device_name=r1&backup1=20251228_175333.cfg&backup2=20251228_175439.cfg HTTP/1.1" 200 -
+2025-12-28 17:55:51 - __main__ - INFO - 收到测试邮件请求
+2025-12-28 17:56:00 - email_notifier - INFO - 告警邮件发送成功
+2025-12-28 17:56:00 - __main__ - INFO - 测试邮件发送成功
+2025-12-28 17:56:00 - werkzeug - INFO - 127.0.0.1 - - [28/Dec/2025 17:56:00] "POST /api/test/email HTTP/1.1" 200 -
+2025-12-28 17:56:11 - werkzeug - INFO - 127.0.0.1 - - [28/Dec/2025 17:56:11] "GET /api/test/logs?lines=100 HTTP/1.1" 200 -
+2025-12-28 17:56:19 - __main__ - INFO - 收到手动触发定时备份请求
+2025-12-28 17:56:19 - scheduler - INFO - ============================================================
+2025-12-28 17:56:19 - __main__ - INFO - 定时备份任务已在后台启动
+2025-12-28 17:56:19 - scheduler - INFO - 开始执行定时备份任务
+2025-12-28 17:56:19 - werkzeug - INFO - 127.0.0.1 - - [28/Dec/2025 17:56:19] "POST /api/test/trigger-backup HTTP/1.1" 200 -
+2025-12-28 17:56:19 - scheduler - INFO - 当前时间: 2025-12-28 17:56:19
+2025-12-28 17:56:19 - scheduler - INFO - 需要备份的设备数量: 2
+2025-12-28 17:56:19 - scheduler - INFO - 开始备份设备: test_device
+2025-12-28 17:56:19 - scheduler - INFO - [test_device] 步骤1: 开始获取设备配置
+2025-12-28 17:56:19 - device_manager - INFO - [test_device] 执行命令获取配置: show running-config
+2025-12-28 17:56:19 - device_manager - INFO - [test_device] 设备未连接，尝试建立连接
+2025-12-28 17:56:19 - device_manager - INFO - [test_device] 开始连接设备: 192.168.1.100 (类型: cisco_ios)
+2025-12-28 17:56:19 - device_manager - INFO - [test_device] 建立SSH/Telnet连接...
+2025-12-28 17:56:21 - werkzeug - INFO - 127.0.0.1 - - [28/Dec/2025 17:56:21] "GET /api/status HTTP/1.1" 200 -
+2025-12-28 17:56:27 - werkzeug - INFO - 127.0.0.1 - - [28/Dec/2025 17:56:27] "GET /api/test/logs?lines=100 HTTP/1.1" 200 -
+2025-12-28 17:56:29 - device_manager - ERROR - [test_device] 连接超时，可能原因: 网络不通、设备未启动、防火墙阻止
+2025-12-28 17:56:29 - device_manager - ERROR - [test_device] 设备连接失败，无法执行命令
+2025-12-28 17:56:29 - device_manager - ERROR - [test_device] 配置获取失败，返回为空
+2025-12-28 17:56:29 - scheduler - ERROR - [test_device] 无法获取设备配置，可能原因: 设备连接失败、命令执行失败或设备无响应
+2025-12-28 17:56:30 - scheduler - INFO - 设备 test_device 备份完成
+2025-12-28 17:56:30 - scheduler - INFO - 开始备份设备: r1
+2025-12-28 17:56:30 - scheduler - INFO - [r1] 步骤1: 开始获取设备配置
+2025-12-28 17:56:30 - device_manager - INFO - [r1] 执行命令获取配置: show running-config
+2025-12-28 17:56:30 - device_manager - INFO - [r1] 设备未连接，尝试建立连接
+2025-12-28 17:56:30 - device_manager - INFO - [r1] 开始连接设备: 192.168.8.251 (类型: huawei)
+2025-12-28 17:56:30 - device_manager - INFO - [r1] 建立SSH/Telnet连接...
+2025-12-28 17:56:30 - paramiko.transport - ERROR - Exception (client): Error reading SSH protocol banner[WinError 10054] 远程主机强迫关闭了一个现有的连接。
+2025-12-28 17:56:30 - paramiko.transport - ERROR - Traceback (most recent call last):
+2025-12-28 17:56:30 - paramiko.transport - ERROR -   File "C:\Users\ljh\Desktop\network\venv\Lib\site-packages\paramiko\transport.py", line 2363, in _check_banner
+2025-12-28 17:56:30 - paramiko.transport - ERROR -     buf = self.packetizer.readline(timeout)
+2025-12-28 17:56:30 - paramiko.transport - ERROR -           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-12-28 17:56:30 - paramiko.transport - ERROR -   File "C:\Users\ljh\Desktop\network\venv\Lib\site-packages\paramiko\packet.py", line 395, in readline
+2025-12-28 17:56:30 - paramiko.transport - ERROR -     buf += self._read_timeout(timeout)
+2025-12-28 17:56:30 - paramiko.transport - ERROR -            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-12-28 17:56:30 - paramiko.transport - ERROR -   File "C:\Users\ljh\Desktop\network\venv\Lib\site-packages\paramiko\packet.py", line 663, in _read_timeout
+2025-12-28 17:56:30 - paramiko.transport - ERROR -     x = self.__socket.recv(128)
+2025-12-28 17:56:30 - paramiko.transport - ERROR -         ^^^^^^^^^^^^^^^^^^^^^^^
+2025-12-28 17:56:30 - paramiko.transport - ERROR - ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+2025-12-28 17:56:30 - paramiko.transport - ERROR - 
+2025-12-28 17:56:30 - paramiko.transport - ERROR - During handling of the above exception, another exception occurred:
+2025-12-28 17:56:30 - paramiko.transport - ERROR - 
+2025-12-28 17:56:30 - paramiko.transport - ERROR - Traceback (most recent call last):
+2025-12-28 17:56:30 - paramiko.transport - ERROR -   File "C:\Users\ljh\Desktop\network\venv\Lib\site-packages\paramiko\transport.py", line 2179, in run
+2025-12-28 17:56:30 - paramiko.transport - ERROR -     self._check_banner()
+2025-12-28 17:56:30 - paramiko.transport - ERROR -   File "C:\Users\ljh\Desktop\network\venv\Lib\site-packages\paramiko\transport.py", line 2367, in _check_banner
+2025-12-28 17:56:30 - paramiko.transport - ERROR -     raise SSHException(
+2025-12-28 17:56:30 - paramiko.transport - ERROR - paramiko.ssh_exception.SSHException: Error reading SSH protocol banner[WinError 10054] 远程主机强迫关闭了一个现有的连接。
+2025-12-28 17:56:30 - paramiko.transport - ERROR - 
+2025-12-28 17:56:30 - device_manager - ERROR - [r1] 连接超时，可能原因: 网络不通、设备未启动、防火墙阻止
+2025-12-28 17:56:30 - device_manager - ERROR - [r1] 设备连接失败，无法执行命令
+2025-12-28 17:56:30 - device_manager - ERROR - [r1] 配置获取失败，返回为空
+2025-12-28 17:56:30 - scheduler - ERROR - [r1] 无法获取设备配置，可能原因: 设备连接失败、命令执行失败或设备无响应
+2025-12-28 17:56:30 - scheduler - INFO - 设备 r1 备份完成
+2025-12-28 17:56:30 - scheduler - INFO - 备份任务完成: 成功 2 个, 失败 0 个
+2025-12-28 17:56:30 - scheduler - INFO - 开始清理过期备份
+2025-12-28 17:56:30 - scheduler - INFO - 过期备份清理完成
+2025-12-28 17:56:30 - scheduler - INFO - ============================================================
+2025-12-28 17:57:24 - __main__ - INFO - 手动备份请求: 设备 r1
+2025-12-28 17:57:24 - __main__ - INFO - [r1] 开始获取设备配置
+2025-12-28 17:57:24 - device_manager - INFO - [r1] 执行命令获取配置: show running-config
+2025-12-28 17:57:24 - device_manager - INFO - [r1] 设备未连接，尝试建立连接
+2025-12-28 17:57:24 - device_manager - INFO - [r1] 开始连接设备: 192.168.8.251 (类型: huawei)
+2025-12-28 17:57:24 - device_manager - INFO - [r1] 建立SSH/Telnet连接...
+2025-12-28 17:57:24 - paramiko.transport - ERROR - Exception (client): Error reading SSH protocol banner[WinError 10054] 远程主机强迫关闭了一个现有的连接。
+2025-12-28 17:57:24 - paramiko.transport - ERROR - Traceback (most recent call last):
+2025-12-28 17:57:24 - paramiko.transport - ERROR -   File "C:\Users\ljh\Desktop\network\venv\Lib\site-packages\paramiko\transport.py", line 2363, in _check_banner
+2025-12-28 17:57:24 - paramiko.transport - ERROR -     buf = self.packetizer.readline(timeout)
+2025-12-28 17:57:24 - paramiko.transport - ERROR -           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-12-28 17:57:24 - paramiko.transport - ERROR -   File "C:\Users\ljh\Desktop\network\venv\Lib\site-packages\paramiko\packet.py", line 395, in readline
+2025-12-28 17:57:24 - paramiko.transport - ERROR -     buf += self._read_timeout(timeout)
+2025-12-28 17:57:24 - paramiko.transport - ERROR -            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-12-28 17:57:24 - paramiko.transport - ERROR -   File "C:\Users\ljh\Desktop\network\venv\Lib\site-packages\paramiko\packet.py", line 663, in _read_timeout
+2025-12-28 17:57:24 - paramiko.transport - ERROR -     x = self.__socket.recv(128)
+2025-12-28 17:57:24 - paramiko.transport - ERROR -         ^^^^^^^^^^^^^^^^^^^^^^^
+2025-12-28 17:57:24 - paramiko.transport - ERROR - ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+2025-12-28 17:57:24 - paramiko.transport - ERROR - 
+2025-12-28 17:57:24 - paramiko.transport - ERROR - During handling of the above exception, another exception occurred:
+2025-12-28 17:57:24 - paramiko.transport - ERROR - 
+2025-12-28 17:57:24 - paramiko.transport - ERROR - Traceback (most recent call last):
+2025-12-28 17:57:24 - paramiko.transport - ERROR -   File "C:\Users\ljh\Desktop\network\venv\Lib\site-packages\paramiko\transport.py", line 2179, in run
+2025-12-28 17:57:24 - paramiko.transport - ERROR -     self._check_banner()
+2025-12-28 17:57:24 - paramiko.transport - ERROR -   File "C:\Users\ljh\Desktop\network\venv\Lib\site-packages\paramiko\transport.py", line 2367, in _check_banner
+2025-12-28 17:57:24 - paramiko.transport - ERROR -     raise SSHException(
+2025-12-28 17:57:24 - paramiko.transport - ERROR - paramiko.ssh_exception.SSHException: Error reading SSH protocol banner[WinError 10054] 远程主机强迫关闭了一个现有的连接。
+2025-12-28 17:57:24 - paramiko.transport - ERROR - 
+2025-12-28 17:57:24 - device_manager - ERROR - [r1] 连接超时，可能原因: 网络不通、设备未启动、防火墙阻止
+2025-12-28 17:57:24 - device_manager - ERROR - [r1] 设备连接失败，无法执行命令
+2025-12-28 17:57:24 - device_manager - ERROR - [r1] 配置获取失败，返回为空
+2025-12-28 17:57:24 - __main__ - ERROR - [r1] 无法获取设备配置
+2025-12-28 17:57:24 - werkzeug - INFO - 127.0.0.1 - - [28/Dec/2025 17:57:24] "[35m[1mPOST /api/backup HTTP/1.1[0m" 500 -
+2025-12-28 17:57:32 - __main__ - INFO - 手动备份请求: 设备 r1
+2025-12-28 17:57:32 - __main__ - INFO - [r1] 开始获取设备配置
+2025-12-28 17:57:32 - device_manager - INFO - [r1] 执行命令获取配置: show running-config
+2025-12-28 17:57:32 - device_manager - INFO - [r1] 设备未连接，尝试建立连接
+2025-12-28 17:57:32 - device_manager - INFO - [r1] 开始连接设备: 192.168.8.251 (类型: huawei)
+2025-12-28 17:57:32 - device_manager - INFO - [r1] 建立SSH/Telnet连接...
+2025-12-28 17:57:32 - paramiko.transport - ERROR - Exception (client): Error reading SSH protocol banner[WinError 10054] 远程主机强迫关闭了一个现有的连接。
+2025-12-28 17:57:32 - paramiko.transport - ERROR - Traceback (most recent call last):
+2025-12-28 17:57:32 - paramiko.transport - ERROR -   File "C:\Users\ljh\Desktop\network\venv\Lib\site-packages\paramiko\transport.py", line 2363, in _check_banner
+2025-12-28 17:57:32 - paramiko.transport - ERROR -     buf = self.packetizer.readline(timeout)
+2025-12-28 17:57:32 - paramiko.transport - ERROR -           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-12-28 17:57:32 - paramiko.transport - ERROR -   File "C:\Users\ljh\Desktop\network\venv\Lib\site-packages\paramiko\packet.py", line 395, in readline
+2025-12-28 17:57:32 - paramiko.transport - ERROR -     buf += self._read_timeout(timeout)
+2025-12-28 17:57:32 - paramiko.transport - ERROR -            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-12-28 17:57:32 - paramiko.transport - ERROR -   File "C:\Users\ljh\Desktop\network\venv\Lib\site-packages\paramiko\packet.py", line 663, in _read_timeout
+2025-12-28 17:57:32 - paramiko.transport - ERROR -     x = self.__socket.recv(128)
+2025-12-28 17:57:32 - paramiko.transport - ERROR -         ^^^^^^^^^^^^^^^^^^^^^^^
+2025-12-28 17:57:32 - paramiko.transport - ERROR - ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+2025-12-28 17:57:32 - paramiko.transport - ERROR - 
+2025-12-28 17:57:32 - paramiko.transport - ERROR - During handling of the above exception, another exception occurred:
+2025-12-28 17:57:32 - paramiko.transport - ERROR - 
+2025-12-28 17:57:32 - paramiko.transport - ERROR - Traceback (most recent call last):
+2025-12-28 17:57:32 - paramiko.transport - ERROR -   File "C:\Users\ljh\Desktop\network\venv\Lib\site-packages\paramiko\transport.py", line 2179, in run
+2025-12-28 17:57:32 - paramiko.transport - ERROR -     self._check_banner()
+2025-12-28 17:57:32 - paramiko.transport - ERROR -   File "C:\Users\ljh\Desktop\network\venv\Lib\site-packages\paramiko\transport.py", line 2367, in _check_banner
+2025-12-28 17:57:32 - paramiko.transport - ERROR -     raise SSHException(
+2025-12-28 17:57:32 - paramiko.transport - ERROR - paramiko.ssh_exception.SSHException: Error reading SSH protocol banner[WinError 10054] 远程主机强迫关闭了一个现有的连接。
+2025-12-28 17:57:32 - paramiko.transport - ERROR - 
+2025-12-28 17:57:32 - device_manager - ERROR - [r1] 连接超时，可能原因: 网络不通、设备未启动、防火墙阻止
+2025-12-28 17:57:32 - device_manager - ERROR - [r1] 设备连接失败，无法执行命令
+2025-12-28 17:57:32 - device_manager - ERROR - [r1] 配置获取失败，返回为空
+2025-12-28 17:57:32 - __main__ - ERROR - [r1] 无法获取设备配置
+2025-12-28 17:57:32 - werkzeug - INFO - 127.0.0.1 - - [28/Dec/2025 17:57:32] "[35m[1mPOST /api/backup HTTP/1.1[0m" 500 -
+2025-12-28 23:20:07 - __main__ - INFO - ============================================================
+2025-12-28 23:20:07 - __main__ - INFO - 网络设备配置备份与管理系统启动
+2025-12-28 23:20:07 - __main__ - INFO - 日志文件: logs\network_backup.log
+2025-12-28 23:20:07 - __main__ - INFO - ============================================================
+2025-12-28 23:20:07 - scheduler - WARNING - pytz未安装，使用系统默认时区
+2025-12-28 23:20:07 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-12-28 23:20:07 - scheduler - INFO - 定时任务已设置: 每天 16:11 执行备份 (时区: Asia/Shanghai)
+2025-12-28 23:20:07 - apscheduler.scheduler - INFO - Added job "每日自动备份" to job store "default"
+2025-12-28 23:20:07 - apscheduler.scheduler - INFO - Scheduler started
+2025-12-28 23:20:07 - scheduler - INFO - 定时任务调度器已启动
+2025-12-28 23:20:15 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.8.252:5000
+2025-12-28 23:20:15 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-12-28 23:20:15 - werkzeug - INFO -  * Restarting with stat
+2025-12-28 23:20:15 - __main__ - INFO - ============================================================
+2025-12-28 23:20:15 - __main__ - INFO - 网络设备配置备份与管理系统启动
+2025-12-28 23:20:15 - __main__ - INFO - 日志文件: logs\network_backup.log
+2025-12-28 23:20:15 - __main__ - INFO - ============================================================
+2025-12-28 23:20:15 - scheduler - WARNING - pytz未安装，使用系统默认时区
+2025-12-28 23:20:15 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-12-28 23:20:15 - scheduler - INFO - 定时任务已设置: 每天 16:11 执行备份 (时区: Asia/Shanghai)
+2025-12-28 23:20:15 - apscheduler.scheduler - INFO - Added job "每日自动备份" to job store "default"
+2025-12-28 23:20:15 - apscheduler.scheduler - INFO - Scheduler started
+2025-12-28 23:20:15 - scheduler - INFO - 定时任务调度器已启动
+2025-12-28 23:20:15 - werkzeug - WARNING -  * Debugger is active!
+2025-12-28 23:20:15 - werkzeug - INFO -  * Debugger PIN: 128-669-623
+2025-12-28 23:20:33 - werkzeug - INFO - 127.0.0.1 - - [28/Dec/2025 23:20:33] "GET / HTTP/1.1" 200 -
+2025-12-28 23:20:33 - werkzeug - INFO - 127.0.0.1 - - [28/Dec/2025 23:20:33] "GET /api/devices HTTP/1.1" 200 -
+2025-12-28 23:20:33 - werkzeug - INFO - 127.0.0.1 - - [28/Dec/2025 23:20:33] "GET /api/status HTTP/1.1" 200 -
+2025-12-28 23:20:33 - werkzeug - INFO - 127.0.0.1 - - [28/Dec/2025 23:20:33] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-12-28 23:20:36 - __main__ - INFO - 获取设备 r1 的备份历史
+2025-12-28 23:20:36 - backup_manager - INFO - 成功获取 3 条备份历史记录
+2025-12-28 23:20:36 - __main__ - INFO - 成功获取 3 条备份记录
+2025-12-28 23:20:36 - werkzeug - INFO - 127.0.0.1 - - [28/Dec/2025 23:20:36] "GET /api/backup/history?device_name=r1 HTTP/1.1" 200 -
+2025-12-28 23:20:39 - werkzeug - INFO - 127.0.0.1 - - [28/Dec/2025 23:20:39] "GET /api/backup/view?device_name=r1&backup_file=20251228_175439.cfg HTTP/1.1" 200 -
+2025-12-28 23:20:40 - werkzeug - INFO - 127.0.0.1 - - [28/Dec/2025 23:20:40] "GET /api/backup/view?device_name=r1&backup_file=20251228_175402.cfg HTTP/1.1" 200 -
+2025-12-28 23:20:41 - werkzeug - INFO - 127.0.0.1 - - [28/Dec/2025 23:20:41] "GET /api/backup/view?device_name=r1&backup_file=20251228_175333.cfg HTTP/1.1" 200 -
+2025-12-28 23:20:43 - backup_manager - INFO - 删除备份文件: backups\r1\20251228_175333.cfg
+2025-12-28 23:20:43 - werkzeug - INFO - 127.0.0.1 - - [28/Dec/2025 23:20:43] "DELETE /api/backup?device_name=r1&backup_file=20251228_175333.cfg HTTP/1.1" 200 -
+2025-12-28 23:20:43 - __main__ - INFO - 获取设备 r1 的备份历史
+2025-12-28 23:20:43 - backup_manager - INFO - 成功获取 2 条备份历史记录
+2025-12-28 23:20:43 - __main__ - INFO - 成功获取 2 条备份记录
+2025-12-28 23:20:43 - werkzeug - INFO - 127.0.0.1 - - [28/Dec/2025 23:20:43] "GET /api/backup/history?device_name=r1 HTTP/1.1" 200 -
+2025-12-28 23:20:43 - werkzeug - INFO - 127.0.0.1 - - [28/Dec/2025 23:20:43] "GET /api/status HTTP/1.1" 200 -
+2025-12-28 23:20:45 - backup_manager - INFO - 删除备份文件: backups\r1\20251228_175402.cfg
+2025-12-28 23:20:45 - werkzeug - INFO - 127.0.0.1 - - [28/Dec/2025 23:20:45] "DELETE /api/backup?device_name=r1&backup_file=20251228_175402.cfg HTTP/1.1" 200 -
+2025-12-28 23:20:45 - __main__ - INFO - 获取设备 r1 的备份历史
+2025-12-28 23:20:45 - backup_manager - INFO - 成功获取 1 条备份历史记录
+2025-12-28 23:20:45 - __main__ - INFO - 成功获取 1 条备份记录
+2025-12-28 23:20:45 - werkzeug - INFO - 127.0.0.1 - - [28/Dec/2025 23:20:45] "GET /api/backup/history?device_name=r1 HTTP/1.1" 200 -
+2025-12-28 23:20:45 - werkzeug - INFO - 127.0.0.1 - - [28/Dec/2025 23:20:45] "GET /api/status HTTP/1.1" 200 -
+2025-12-28 23:20:46 - backup_manager - INFO - 删除备份文件: backups\r1\20251228_175439.cfg
+2025-12-28 23:20:46 - werkzeug - INFO - 127.0.0.1 - - [28/Dec/2025 23:20:46] "DELETE /api/backup?device_name=r1&backup_file=20251228_175439.cfg HTTP/1.1" 200 -
+2025-12-28 23:20:46 - __main__ - INFO - 获取设备 r1 的备份历史
+2025-12-28 23:20:46 - __main__ - INFO - 成功获取 0 条备份记录
+2025-12-28 23:20:46 - werkzeug - INFO - 127.0.0.1 - - [28/Dec/2025 23:20:46] "GET /api/backup/history?device_name=r1 HTTP/1.1" 200 -
+2025-12-28 23:20:46 - werkzeug - INFO - 127.0.0.1 - - [28/Dec/2025 23:20:46] "GET /api/status HTTP/1.1" 200 -
+2025-12-28 23:20:48 - __main__ - INFO - 获取设备 r1 的备份历史
+2025-12-28 23:20:48 - __main__ - INFO - 成功获取 0 条备份记录
+2025-12-28 23:20:48 - werkzeug - INFO - 127.0.0.1 - - [28/Dec/2025 23:20:48] "GET /api/backup/history?device_name=r1 HTTP/1.1" 200 -
+2025-12-28 23:20:48 - __main__ - INFO - 获取设备 test_device 的备份历史
+2025-12-28 23:20:48 - __main__ - INFO - 成功获取 0 条备份记录
+2025-12-28 23:20:48 - werkzeug - INFO - 127.0.0.1 - - [28/Dec/2025 23:20:48] "GET /api/backup/history?device_name=test_device HTTP/1.1" 200 -
+2025-12-28 23:20:49 - __main__ - INFO - 获取设备 r1 的备份历史
+2025-12-28 23:20:49 - __main__ - INFO - 成功获取 0 条备份记录
+2025-12-28 23:20:49 - werkzeug - INFO - 127.0.0.1 - - [28/Dec/2025 23:20:49] "GET /api/backup/history?device_name=r1 HTTP/1.1" 200 -
+2025-12-28 23:20:54 - werkzeug - INFO - 127.0.0.1 - - [28/Dec/2025 23:20:54] "GET /test HTTP/1.1" 200 -
+2025-12-28 23:20:54 - werkzeug - INFO - 127.0.0.1 - - [28/Dec/2025 23:20:54] "GET /api/status HTTP/1.1" 200 -
+2025-12-28 23:20:57 - werkzeug - INFO - 127.0.0.1 - - [28/Dec/2025 23:20:57] "GET / HTTP/1.1" 200 -
+2025-12-28 23:20:57 - werkzeug - INFO - 127.0.0.1 - - [28/Dec/2025 23:20:57] "GET /api/devices HTTP/1.1" 200 -
+2025-12-28 23:20:57 - werkzeug - INFO - 127.0.0.1 - - [28/Dec/2025 23:20:57] "GET /api/status HTTP/1.1" 200 -
+2025-12-28 23:20:58 - __main__ - INFO - 获取设备 r1 的备份历史
+2025-12-28 23:20:58 - __main__ - INFO - 成功获取 0 条备份记录
+2025-12-28 23:20:58 - werkzeug - INFO - 127.0.0.1 - - [28/Dec/2025 23:20:58] "GET /api/backup/history?device_name=r1 HTTP/1.1" 200 -
+2025-12-28 23:21:01 - __main__ - INFO - 手动备份请求: 设备 r1
+2025-12-28 23:21:01 - __main__ - INFO - [r1] 开始获取设备配置
+2025-12-28 23:21:01 - device_manager - INFO - [r1] 执行命令获取配置: show running-config
+2025-12-28 23:21:01 - device_manager - INFO - [r1] 设备未连接，尝试建立连接
+2025-12-28 23:21:01 - device_manager - INFO - [r1] 开始连接设备: 192.168.8.251 (类型: huawei)
+2025-12-28 23:21:01 - device_manager - INFO - [r1] 建立SSH/Telnet连接...
+2025-12-28 23:21:03 - __main__ - INFO - 手动备份请求: 设备 r1
+2025-12-28 23:21:03 - __main__ - INFO - [r1] 开始获取设备配置
+2025-12-28 23:21:03 - device_manager - INFO - [r1] 执行命令获取配置: show running-config
+2025-12-28 23:21:03 - device_manager - INFO - [r1] 设备未连接，尝试建立连接
+2025-12-28 23:21:03 - device_manager - INFO - [r1] 开始连接设备: 192.168.8.251 (类型: huawei)
+2025-12-28 23:21:03 - device_manager - INFO - [r1] 建立SSH/Telnet连接...
+2025-12-28 23:21:04 - device_manager - ERROR - [r1] 连接超时，可能原因: 网络不通、设备未启动、防火墙阻止
+2025-12-28 23:21:04 - device_manager - ERROR - [r1] 设备连接失败，无法执行命令
+2025-12-28 23:21:04 - device_manager - ERROR - [r1] 配置获取失败，返回为空
+2025-12-28 23:21:04 - __main__ - ERROR - [r1] 无法获取设备配置
+2025-12-28 23:21:04 - werkzeug - INFO - 127.0.0.1 - - [28/Dec/2025 23:21:04] "[35m[1mPOST /api/backup HTTP/1.1[0m" 500 -
+2025-12-28 23:21:05 - __main__ - INFO - 获取设备 r1 的备份历史
+2025-12-28 23:21:05 - __main__ - INFO - 成功获取 0 条备份记录
+2025-12-28 23:21:05 - werkzeug - INFO - 127.0.0.1 - - [28/Dec/2025 23:21:05] "GET /api/backup/history?device_name=r1 HTTP/1.1" 200 -
+2025-12-28 23:21:06 - device_manager - ERROR - [r1] 连接超时，可能原因: 网络不通、设备未启动、防火墙阻止
+2025-12-28 23:21:06 - device_manager - ERROR - [r1] 设备连接失败，无法执行命令
+2025-12-28 23:21:06 - device_manager - ERROR - [r1] 配置获取失败，返回为空
+2025-12-28 23:21:06 - __main__ - ERROR - [r1] 无法获取设备配置
+2025-12-28 23:21:06 - werkzeug - INFO - 127.0.0.1 - - [28/Dec/2025 23:21:06] "[35m[1mPOST /api/backup HTTP/1.1[0m" 500 -
+2025-12-28 23:21:08 - werkzeug - INFO - 127.0.0.1 - - [28/Dec/2025 23:21:08] "GET /test HTTP/1.1" 200 -
+2025-12-28 23:21:08 - werkzeug - INFO - 127.0.0.1 - - [28/Dec/2025 23:21:08] "GET /api/status HTTP/1.1" 200 -
+2025-12-28 23:21:12 - werkzeug - INFO - 127.0.0.1 - - [28/Dec/2025 23:21:12] "GET / HTTP/1.1" 200 -
+2025-12-28 23:21:12 - werkzeug - INFO - 127.0.0.1 - - [28/Dec/2025 23:21:12] "GET /api/devices HTTP/1.1" 200 -
+2025-12-28 23:21:12 - werkzeug - INFO - 127.0.0.1 - - [28/Dec/2025 23:21:12] "GET /api/status HTTP/1.1" 200 -
+2025-12-28 23:21:13 - __main__ - INFO - 获取设备 r1 的备份历史
+2025-12-28 23:21:13 - __main__ - INFO - 成功获取 0 条备份记录
+2025-12-28 23:21:13 - werkzeug - INFO - 127.0.0.1 - - [28/Dec/2025 23:21:13] "GET /api/backup/history?device_name=r1 HTTP/1.1" 200 -
+2025-12-28 23:21:21 - __main__ - INFO - 获取设备 test_device 的备份历史
+2025-12-28 23:21:21 - __main__ - INFO - 成功获取 0 条备份记录
+2025-12-28 23:21:21 - werkzeug - INFO - 127.0.0.1 - - [28/Dec/2025 23:21:21] "GET /api/backup/history?device_name=test_device HTTP/1.1" 200 -
+2025-12-28 23:21:22 - __main__ - INFO - 获取设备 test_device 的备份历史
+2025-12-28 23:21:22 - __main__ - INFO - 成功获取 0 条备份记录
+2025-12-28 23:21:22 - werkzeug - INFO - 127.0.0.1 - - [28/Dec/2025 23:21:22] "GET /api/backup/history?device_name=test_device HTTP/1.1" 200 -
+2025-12-28 23:21:22 - __main__ - INFO - 获取设备 test_device 的备份历史
+2025-12-28 23:21:22 - __main__ - INFO - 成功获取 0 条备份记录
+2025-12-28 23:21:22 - werkzeug - INFO - 127.0.0.1 - - [28/Dec/2025 23:21:22] "GET /api/backup/history?device_name=test_device HTTP/1.1" 200 -
+2025-12-28 23:21:23 - __main__ - INFO - 获取设备 test_device 的备份历史
+2025-12-28 23:21:23 - __main__ - INFO - 成功获取 0 条备份记录
+2025-12-28 23:21:23 - werkzeug - INFO - 127.0.0.1 - - [28/Dec/2025 23:21:23] "GET /api/backup/history?device_name=test_device HTTP/1.1" 200 -
+2025-12-28 23:21:24 - werkzeug - INFO - 127.0.0.1 - - [28/Dec/2025 23:21:24] "GET /test HTTP/1.1" 200 -
+2025-12-28 23:21:24 - werkzeug - INFO - 127.0.0.1 - - [28/Dec/2025 23:21:24] "GET /api/status HTTP/1.1" 200 -
+2025-12-28 23:21:25 - werkzeug - INFO - 127.0.0.1 - - [28/Dec/2025 23:21:25] "GET /api/devices HTTP/1.1" 200 -
+2025-12-28 23:21:35 - __main__ - INFO - 手动备份请求: 设备 test_device
+2025-12-28 23:21:35 - __main__ - INFO - [test_device] 开始获取设备配置
+2025-12-28 23:21:35 - device_manager - INFO - [test_device] 执行命令获取配置: show running-config
+2025-12-28 23:21:35 - device_manager - INFO - [test_device] 设备未连接，尝试建立连接
+2025-12-28 23:21:35 - device_manager - INFO - [test_device] 开始连接设备: 192.168.1.100 (类型: cisco_ios)
+2025-12-28 23:21:35 - device_manager - INFO - [test_device] 建立SSH/Telnet连接...
+2025-12-28 23:21:37 - __main__ - INFO - 获取设备 test_device 的备份历史
+2025-12-28 23:21:37 - __main__ - INFO - 成功获取 0 条备份记录
+2025-12-28 23:21:37 - werkzeug - INFO - 127.0.0.1 - - [28/Dec/2025 23:21:37] "GET /api/backup/history?device_name=test_device HTTP/1.1" 200 -
+2025-12-28 23:21:45 - device_manager - ERROR - [test_device] 连接超时，可能原因: 网络不通、设备未启动、防火墙阻止
+2025-12-28 23:21:45 - device_manager - ERROR - [test_device] 设备连接失败，无法执行命令
+2025-12-28 23:21:45 - device_manager - ERROR - [test_device] 配置获取失败，返回为空
+2025-12-28 23:21:45 - __main__ - ERROR - [test_device] 无法获取设备配置
+2025-12-28 23:21:45 - werkzeug - INFO - 127.0.0.1 - - [28/Dec/2025 23:21:45] "[35m[1mPOST /api/backup HTTP/1.1[0m" 500 -
+2025-12-28 23:21:47 - __main__ - INFO - 获取设备 test_device 的备份历史
+2025-12-28 23:21:47 - __main__ - INFO - 成功获取 0 条备份记录
+2025-12-28 23:21:47 - werkzeug - INFO - 127.0.0.1 - - [28/Dec/2025 23:21:47] "GET /api/backup/history?device_name=test_device HTTP/1.1" 200 -
+2025-12-28 23:21:49 - __main__ - INFO - 获取设备 r1 的备份历史
+2025-12-28 23:21:49 - __main__ - INFO - 成功获取 0 条备份记录
+2025-12-28 23:21:49 - werkzeug - INFO - 127.0.0.1 - - [28/Dec/2025 23:21:49] "GET /api/backup/history?device_name=r1 HTTP/1.1" 200 -
+2025-12-28 23:28:30 - __main__ - INFO - ============================================================
+2025-12-28 23:28:30 - __main__ - INFO - 网络设备配置备份与管理系统启动
+2025-12-28 23:28:30 - __main__ - INFO - 日志文件: logs\network_backup.log
+2025-12-28 23:28:30 - __main__ - INFO - ============================================================
+2025-12-28 23:28:30 - scheduler - WARNING - pytz未安装，使用系统默认时区
+2025-12-28 23:28:30 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-12-28 23:28:30 - scheduler - INFO - 定时任务已设置: 每天 16:11 执行备份 (时区: Asia/Shanghai)
+2025-12-28 23:28:30 - apscheduler.scheduler - INFO - Added job "每日自动备份" to job store "default"
+2025-12-28 23:28:30 - apscheduler.scheduler - INFO - Scheduler started
+2025-12-28 23:28:30 - scheduler - INFO - 定时任务调度器已启动
+2025-12-28 23:28:38 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.8.252:5000
+2025-12-28 23:28:38 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-12-28 23:28:38 - werkzeug - INFO -  * Restarting with stat
+2025-12-28 23:28:39 - __main__ - INFO - ============================================================
+2025-12-28 23:28:39 - __main__ - INFO - 网络设备配置备份与管理系统启动
+2025-12-28 23:28:39 - __main__ - INFO - 日志文件: logs\network_backup.log
+2025-12-28 23:28:39 - __main__ - INFO - ============================================================
+2025-12-28 23:28:39 - scheduler - WARNING - pytz未安装，使用系统默认时区
+2025-12-28 23:28:39 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-12-28 23:28:39 - scheduler - INFO - 定时任务已设置: 每天 16:11 执行备份 (时区: Asia/Shanghai)
+2025-12-28 23:28:39 - apscheduler.scheduler - INFO - Added job "每日自动备份" to job store "default"
+2025-12-28 23:28:39 - apscheduler.scheduler - INFO - Scheduler started
+2025-12-28 23:28:39 - scheduler - INFO - 定时任务调度器已启动
+2025-12-28 23:28:39 - werkzeug - WARNING -  * Debugger is active!
+2025-12-28 23:28:39 - werkzeug - INFO -  * Debugger PIN: 128-669-623
+2025-12-28 23:29:23 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2025-12-28 23:29:23 - scheduler - INFO - 定时任务调度器已停止
+2025-12-28 23:29:23 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2025-12-28 23:29:23 - scheduler - INFO - 定时任务调度器已停止
+2025-12-28 23:34:36 - __main__ - INFO - ============================================================
+2025-12-28 23:34:36 - __main__ - INFO - 网络设备配置备份与管理系统启动
+2025-12-28 23:34:36 - __main__ - INFO - 日志文件: logs\network_backup.log
+2025-12-28 23:34:36 - __main__ - INFO - ============================================================
+2025-12-28 23:34:36 - scheduler - INFO - 使用时区: Asia/Shanghai
+2025-12-28 23:34:36 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-12-28 23:34:36 - scheduler - INFO - 定时任务已设置: 每天 16:11 执行备份 (时区: Asia/Shanghai)
+2025-12-28 23:34:36 - apscheduler.scheduler - INFO - Added job "每日自动备份" to job store "default"
+2025-12-28 23:34:36 - apscheduler.scheduler - INFO - Scheduler started
+2025-12-28 23:34:36 - scheduler - INFO - 定时任务调度器已启动
+2025-12-28 23:34:44 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.8.252:5000
+2025-12-28 23:34:44 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-12-28 23:34:44 - werkzeug - INFO -  * Restarting with stat
+2025-12-28 23:34:45 - __main__ - INFO - ============================================================
+2025-12-28 23:34:45 - __main__ - INFO - 网络设备配置备份与管理系统启动
+2025-12-28 23:34:45 - __main__ - INFO - 日志文件: logs\network_backup.log
+2025-12-28 23:34:45 - __main__ - INFO - ============================================================
+2025-12-28 23:34:45 - scheduler - INFO - 使用时区: Asia/Shanghai
+2025-12-28 23:34:45 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-12-28 23:34:45 - scheduler - INFO - 定时任务已设置: 每天 16:11 执行备份 (时区: Asia/Shanghai)
+2025-12-28 23:34:45 - apscheduler.scheduler - INFO - Added job "每日自动备份" to job store "default"
+2025-12-28 23:34:45 - apscheduler.scheduler - INFO - Scheduler started
+2025-12-28 23:34:45 - scheduler - INFO - 定时任务调度器已启动
+2025-12-28 23:34:45 - werkzeug - WARNING -  * Debugger is active!
+2025-12-28 23:34:45 - werkzeug - INFO -  * Debugger PIN: 106-299-466
+2025-12-28 23:34:57 - werkzeug - INFO - 127.0.0.1 - - [28/Dec/2025 23:34:57] "GET / HTTP/1.1" 200 -
+2025-12-28 23:34:57 - werkzeug - INFO - 127.0.0.1 - - [28/Dec/2025 23:34:57] "GET /api/devices HTTP/1.1" 200 -
+2025-12-28 23:34:57 - werkzeug - INFO - 127.0.0.1 - - [28/Dec/2025 23:34:57] "GET /api/status HTTP/1.1" 200 -
+2025-12-28 23:34:57 - werkzeug - INFO - 127.0.0.1 - - [28/Dec/2025 23:34:57] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-12-28 23:35:00 - __main__ - INFO - 获取设备 r1 的备份历史
+2025-12-28 23:35:00 - __main__ - INFO - 成功获取 0 条备份记录
+2025-12-28 23:35:00 - werkzeug - INFO - 127.0.0.1 - - [28/Dec/2025 23:35:00] "GET /api/backup/history?device_name=r1 HTTP/1.1" 200 -
+2025-12-28 23:35:08 - werkzeug - INFO - 127.0.0.1 - - [28/Dec/2025 23:35:08] "GET /test HTTP/1.1" 200 -
+2025-12-28 23:35:08 - werkzeug - INFO - 127.0.0.1 - - [28/Dec/2025 23:35:08] "GET /api/status HTTP/1.1" 200 -
+2025-12-28 23:35:11 - werkzeug - INFO - 127.0.0.1 - - [28/Dec/2025 23:35:11] "GET /api/devices HTTP/1.1" 200 -
+2025-12-28 23:35:21 - __main__ - INFO - 手动备份请求: 设备 r1
+2025-12-28 23:35:21 - __main__ - INFO - [r1] 开始获取设备配置
+2025-12-28 23:35:21 - device_manager - INFO - [r1] 执行命令获取配置: show running-config
+2025-12-28 23:35:21 - device_manager - INFO - [r1] 设备未连接，尝试建立连接
+2025-12-28 23:35:21 - device_manager - INFO - [r1] 开始连接设备: 192.168.8.251 (类型: huawei)
+2025-12-28 23:35:21 - device_manager - INFO - [r1] 建立SSH/Telnet连接...
+2025-12-28 23:35:21 - paramiko.transport - INFO - Connected (version 1.99, client DOPRA-1.5)
+2025-12-28 23:35:23 - paramiko.transport - INFO - Authentication (password) successful!
+2025-12-28 23:35:24 - device_manager - INFO - [r1] 成功连接到设备 192.168.8.251
+2025-12-28 23:35:24 - device_manager - INFO - [r1] 执行命令: show running-config
+2025-12-28 23:35:34 - device_manager - ERROR - [r1] 执行命令时发生错误: 
+Pattern not detected: 'Info:\\ The\\ configuration\\ takes\\ effect\\ on\\ the\\ current\\ user\\ terminal\\ interface\\ only\\.' in output.
+
+Things you might try to fix this:
+1. Explicitly set your pattern using the expect_string argument.
+2. Increase the read_timeout to a larger value.
+
+You can also look at the Netmiko session_log or debug log for more information.
+
+Traceback (most recent call last):
+  File "C:\Users\ljh\Desktop\network\device_manager.py", line 99, in execute_command
+    output = connection.send_command(command)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ljh\Desktop\network\venv\Lib\site-packages\netmiko\utilities.py", line 592, in wrapper_decorator
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ljh\Desktop\network\venv\Lib\site-packages\netmiko\base_connection.py", line 1790, in send_command
+    raise ReadTimeout(msg)
+netmiko.exceptions.ReadTimeout: 
+Pattern not detected: 'Info:\\ The\\ configuration\\ takes\\ effect\\ on\\ the\\ current\\ user\\ terminal\\ interface\\ only\\.' in output.
+
+Things you might try to fix this:
+1. Explicitly set your pattern using the expect_string argument.
+2. Increase the read_timeout to a larger value.
+
+You can also look at the Netmiko session_log or debug log for more information.
+
+
+2025-12-28 23:35:34 - device_manager - WARNING - [r1] 清除连接缓存
+2025-12-28 23:35:34 - device_manager - ERROR - [r1] 配置获取失败，返回为空
+2025-12-28 23:35:34 - __main__ - ERROR - [r1] 无法获取设备配置
+2025-12-28 23:35:34 - werkzeug - INFO - 127.0.0.1 - - [28/Dec/2025 23:35:34] "[35m[1mPOST /api/backup HTTP/1.1[0m" 500 -

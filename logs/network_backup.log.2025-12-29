@@ -1,0 +1,472 @@
+2025-12-29 09:10:57 - __main__ - INFO - ============================================================
+2025-12-29 09:10:57 - __main__ - INFO - 网络设备配置备份与管理系统启动
+2025-12-29 09:10:57 - __main__ - INFO - 日志文件: logs\network_backup.log
+2025-12-29 09:10:57 - __main__ - INFO - ============================================================
+2025-12-29 09:10:57 - scheduler - INFO - 使用时区: Asia/Shanghai
+2025-12-29 09:10:57 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-12-29 09:10:57 - scheduler - INFO - 定时任务已设置: 每天 16:11 执行备份 (时区: Asia/Shanghai)
+2025-12-29 09:10:57 - apscheduler.scheduler - INFO - Added job "每日自动备份" to job store "default"
+2025-12-29 09:10:57 - apscheduler.scheduler - INFO - Scheduler started
+2025-12-29 09:10:57 - scheduler - INFO - 定时任务调度器已启动
+2025-12-29 09:11:13 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.8.253:5000
+2025-12-29 09:11:13 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-12-29 09:11:13 - werkzeug - INFO -  * Restarting with stat
+2025-12-29 09:11:13 - __main__ - INFO - ============================================================
+2025-12-29 09:11:13 - __main__ - INFO - 网络设备配置备份与管理系统启动
+2025-12-29 09:11:13 - __main__ - INFO - 日志文件: logs\network_backup.log
+2025-12-29 09:11:13 - __main__ - INFO - ============================================================
+2025-12-29 09:11:13 - scheduler - INFO - 使用时区: Asia/Shanghai
+2025-12-29 09:11:13 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-12-29 09:11:13 - scheduler - INFO - 定时任务已设置: 每天 16:11 执行备份 (时区: Asia/Shanghai)
+2025-12-29 09:11:13 - apscheduler.scheduler - INFO - Added job "每日自动备份" to job store "default"
+2025-12-29 09:11:13 - apscheduler.scheduler - INFO - Scheduler started
+2025-12-29 09:11:13 - scheduler - INFO - 定时任务调度器已启动
+2025-12-29 09:11:13 - werkzeug - WARNING -  * Debugger is active!
+2025-12-29 09:11:13 - werkzeug - INFO -  * Debugger PIN: 128-669-623
+2025-12-29 09:13:28 - __main__ - INFO - ============================================================
+2025-12-29 09:13:28 - __main__ - INFO - 网络设备配置备份与管理系统启动
+2025-12-29 09:13:28 - __main__ - INFO - 日志文件: logs\network_backup.log
+2025-12-29 09:13:28 - __main__ - INFO - ============================================================
+2025-12-29 09:13:28 - scheduler - INFO - 使用时区: Asia/Shanghai
+2025-12-29 09:13:28 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-12-29 09:13:28 - scheduler - INFO - 定时任务已设置: 每天 16:11 执行备份 (时区: Asia/Shanghai)
+2025-12-29 09:13:28 - apscheduler.scheduler - INFO - Added job "每日自动备份" to job store "default"
+2025-12-29 09:13:28 - apscheduler.scheduler - INFO - Scheduler started
+2025-12-29 09:13:28 - scheduler - INFO - 定时任务调度器已启动
+2025-12-29 09:13:45 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.8.253:5000
+2025-12-29 09:13:45 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-12-29 09:13:45 - werkzeug - INFO -  * Restarting with stat
+2025-12-29 09:13:45 - __main__ - INFO - ============================================================
+2025-12-29 09:13:45 - __main__ - INFO - 网络设备配置备份与管理系统启动
+2025-12-29 09:13:45 - __main__ - INFO - 日志文件: logs\network_backup.log
+2025-12-29 09:13:45 - __main__ - INFO - ============================================================
+2025-12-29 09:13:45 - scheduler - INFO - 使用时区: Asia/Shanghai
+2025-12-29 09:13:45 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-12-29 09:13:45 - scheduler - INFO - 定时任务已设置: 每天 16:11 执行备份 (时区: Asia/Shanghai)
+2025-12-29 09:13:45 - apscheduler.scheduler - INFO - Added job "每日自动备份" to job store "default"
+2025-12-29 09:13:45 - apscheduler.scheduler - INFO - Scheduler started
+2025-12-29 09:13:45 - scheduler - INFO - 定时任务调度器已启动
+2025-12-29 09:13:45 - werkzeug - WARNING -  * Debugger is active!
+2025-12-29 09:13:45 - werkzeug - INFO -  * Debugger PIN: 106-299-466
+2025-12-29 09:16:57 - __main__ - INFO - 手动备份请求: 设备 huawei
+2025-12-29 09:16:57 - __main__ - INFO - [huawei] 开始获取设备配置
+2025-12-29 09:16:57 - device_manager - INFO - [huawei] 执行命令获取配置: show running-config
+2025-12-29 09:16:57 - device_manager - INFO - [huawei] 设备未连接，尝试建立连接
+2025-12-29 09:16:57 - device_manager - ERROR - [huawei] 设备不存在于配置中
+2025-12-29 09:16:57 - device_manager - ERROR - [huawei] 设备连接失败，无法执行命令
+2025-12-29 09:16:57 - device_manager - ERROR - [huawei] 配置获取失败，返回为空
+2025-12-29 09:16:57 - __main__ - ERROR - [huawei] 无法获取设备配置
+2025-12-29 09:16:57 - werkzeug - INFO - 127.0.0.1 - - [29/Dec/2025 09:16:57] "[35m[1mPOST /api/backup HTTP/1.1[0m" 500 -
+2025-12-29 09:19:23 - werkzeug - INFO - 127.0.0.1 - - [29/Dec/2025 09:19:23] "GET / HTTP/1.1" 200 -
+2025-12-29 09:19:23 - werkzeug - INFO - 127.0.0.1 - - [29/Dec/2025 09:19:23] "GET /api/devices HTTP/1.1" 200 -
+2025-12-29 09:19:23 - werkzeug - INFO - 127.0.0.1 - - [29/Dec/2025 09:19:23] "GET /api/status HTTP/1.1" 200 -
+2025-12-29 09:19:41 - werkzeug - INFO - 127.0.0.1 - - [29/Dec/2025 09:19:41] "POST /api/devices HTTP/1.1" 200 -
+2025-12-29 09:19:41 - werkzeug - INFO - 127.0.0.1 - - [29/Dec/2025 09:19:41] "GET /api/devices HTTP/1.1" 200 -
+2025-12-29 09:19:42 - werkzeug - INFO - 127.0.0.1 - - [29/Dec/2025 09:19:42] "GET /api/status HTTP/1.1" 200 -
+2025-12-29 09:19:49 - werkzeug - INFO - 127.0.0.1 - - [29/Dec/2025 09:19:49] "GET /test HTTP/1.1" 200 -
+2025-12-29 09:19:49 - werkzeug - INFO - 127.0.0.1 - - [29/Dec/2025 09:19:49] "GET /api/status HTTP/1.1" 200 -
+2025-12-29 09:19:52 - werkzeug - INFO - 127.0.0.1 - - [29/Dec/2025 09:19:52] "GET /api/devices HTTP/1.1" 200 -
+2025-12-29 09:20:00 - __main__ - INFO - 手动备份请求: 设备 huawei
+2025-12-29 09:20:00 - __main__ - INFO - [huawei] 开始获取设备配置
+2025-12-29 09:20:00 - device_manager - INFO - [huawei] 执行命令获取配置: show running-config
+2025-12-29 09:20:00 - device_manager - INFO - [huawei] 设备未连接，尝试建立连接
+2025-12-29 09:20:00 - device_manager - INFO - [huawei] 开始连接设备: 192.168.8.10 (类型: huawei)
+2025-12-29 09:20:00 - device_manager - INFO - [huawei] 建立SSH/Telnet连接...
+2025-12-29 09:20:00 - paramiko.transport - INFO - Connected (version 1.99, client DOPRA-1.5)
+2025-12-29 09:20:01 - paramiko.transport - INFO - Authentication (password) successful!
+2025-12-29 09:20:03 - device_manager - INFO - [huawei] 成功连接到设备 192.168.8.10 (尝试 1/3)
+2025-12-29 09:20:03 - device_manager - INFO - [huawei] 执行命令: show running-config (尝试 1/2)
+2025-12-29 09:20:04 - device_manager - INFO - [huawei] 命令执行成功，输出长度: 60 字符
+2025-12-29 09:20:04 - device_manager - INFO - [huawei] 配置获取成功，长度: 60 字符
+2025-12-29 09:20:04 - __main__ - INFO - [huawei] 配置获取成功，开始保存备份
+2025-12-29 09:20:04 - backup_manager - INFO - [huawei] 保存备份文件: backups\huawei\20251229_092004.cfg
+2025-12-29 09:20:04 - backup_manager - INFO - [huawei] 备份文件保存成功: backups\huawei\20251229_092004.cfg (大小: 61 字节)
+2025-12-29 09:20:04 - __main__ - INFO - [huawei] 备份成功: backups\huawei\20251229_092004.cfg
+2025-12-29 09:20:04 - backup_manager - INFO - 成功获取 1 条备份历史记录
+2025-12-29 09:20:04 - werkzeug - INFO - 127.0.0.1 - - [29/Dec/2025 09:20:04] "POST /api/backup HTTP/1.1" 200 -
+2025-12-29 09:20:11 - werkzeug - INFO - 127.0.0.1 - - [29/Dec/2025 09:20:11] "GET / HTTP/1.1" 200 -
+2025-12-29 09:20:11 - werkzeug - INFO - 127.0.0.1 - - [29/Dec/2025 09:20:11] "GET /api/devices HTTP/1.1" 200 -
+2025-12-29 09:20:11 - werkzeug - INFO - 127.0.0.1 - - [29/Dec/2025 09:20:11] "GET /api/status HTTP/1.1" 200 -
+2025-12-29 09:20:12 - __main__ - INFO - 获取设备 huawei 的备份历史
+2025-12-29 09:20:12 - backup_manager - INFO - 成功获取 1 条备份历史记录
+2025-12-29 09:20:12 - __main__ - INFO - 成功获取 1 条备份记录
+2025-12-29 09:20:12 - werkzeug - INFO - 127.0.0.1 - - [29/Dec/2025 09:20:12] "GET /api/backup/history?device_name=huawei HTTP/1.1" 200 -
+2025-12-29 09:20:13 - werkzeug - INFO - 127.0.0.1 - - [29/Dec/2025 09:20:13] "GET /api/backup/view?device_name=huawei&backup_file=20251229_092004.cfg HTTP/1.1" 200 -
+2025-12-29 09:20:33 - werkzeug - INFO - 127.0.0.1 - - [29/Dec/2025 09:20:33] "GET /test HTTP/1.1" 200 -
+2025-12-29 09:20:33 - werkzeug - INFO - 127.0.0.1 - - [29/Dec/2025 09:20:33] "GET /api/status HTTP/1.1" 200 -
+2025-12-29 09:20:39 - werkzeug - INFO - 127.0.0.1 - - [29/Dec/2025 09:20:39] "GET /api/devices HTTP/1.1" 200 -
+2025-12-29 09:20:44 - __main__ - INFO - 手动备份请求: 设备 huawei
+2025-12-29 09:20:44 - __main__ - INFO - [huawei] 开始获取设备配置
+2025-12-29 09:20:44 - device_manager - INFO - [huawei] 执行命令获取配置: show running-config
+2025-12-29 09:20:44 - device_manager - INFO - [huawei] 执行命令: show running-config (尝试 1/2)
+2025-12-29 09:20:45 - device_manager - INFO - [huawei] 命令执行成功，输出长度: 60 字符
+2025-12-29 09:20:45 - device_manager - INFO - [huawei] 配置获取成功，长度: 60 字符
+2025-12-29 09:20:45 - __main__ - INFO - [huawei] 配置获取成功，开始保存备份
+2025-12-29 09:20:45 - backup_manager - INFO - [huawei] 保存备份文件: backups\huawei\20251229_092045.cfg
+2025-12-29 09:20:45 - backup_manager - INFO - [huawei] 备份文件保存成功: backups\huawei\20251229_092045.cfg (大小: 61 字节)
+2025-12-29 09:20:45 - __main__ - INFO - [huawei] 备份成功: backups\huawei\20251229_092045.cfg
+2025-12-29 09:20:45 - backup_manager - INFO - 成功获取 2 条备份历史记录
+2025-12-29 09:20:45 - werkzeug - INFO - 127.0.0.1 - - [29/Dec/2025 09:20:45] "POST /api/backup HTTP/1.1" 200 -
+2025-12-29 09:20:50 - __main__ - INFO - 获取设备 huawei 的备份历史
+2025-12-29 09:20:50 - backup_manager - INFO - 成功获取 2 条备份历史记录
+2025-12-29 09:20:50 - __main__ - INFO - 成功获取 2 条备份记录
+2025-12-29 09:20:50 - werkzeug - INFO - 127.0.0.1 - - [29/Dec/2025 09:20:50] "GET /api/backup/history?device_name=huawei HTTP/1.1" 200 -
+2025-12-29 09:20:52 - werkzeug - INFO - 127.0.0.1 - - [29/Dec/2025 09:20:52] "GET /api/diff?device_name=huawei&backup1=20251229_092045.cfg&backup2=20251229_092004.cfg HTTP/1.1" 200 -
+2025-12-29 09:39:18 - __main__ - INFO - ============================================================
+2025-12-29 09:39:18 - __main__ - INFO - 网络设备配置备份与管理系统启动
+2025-12-29 09:39:18 - __main__ - INFO - 日志文件: logs\network_backup.log
+2025-12-29 09:39:18 - __main__ - INFO - ============================================================
+2025-12-29 09:39:18 - scheduler - INFO - 使用时区: Asia/Shanghai
+2025-12-29 09:39:18 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-12-29 09:39:18 - scheduler - INFO - 定时任务已设置: 每天 16:11 执行备份 (时区: Asia/Shanghai)
+2025-12-29 09:39:18 - apscheduler.scheduler - INFO - Added job "每日自动备份" to job store "default"
+2025-12-29 09:39:18 - apscheduler.scheduler - INFO - Scheduler started
+2025-12-29 09:39:18 - scheduler - INFO - 定时任务调度器已启动
+2025-12-29 09:39:34 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.8.253:5000
+2025-12-29 09:39:34 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-12-29 09:39:34 - werkzeug - INFO -  * Restarting with stat
+2025-12-29 09:39:35 - __main__ - INFO - ============================================================
+2025-12-29 09:39:35 - __main__ - INFO - 网络设备配置备份与管理系统启动
+2025-12-29 09:39:35 - __main__ - INFO - 日志文件: logs\network_backup.log
+2025-12-29 09:39:35 - __main__ - INFO - ============================================================
+2025-12-29 09:39:35 - scheduler - INFO - 使用时区: Asia/Shanghai
+2025-12-29 09:39:35 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-12-29 09:39:35 - scheduler - INFO - 定时任务已设置: 每天 16:11 执行备份 (时区: Asia/Shanghai)
+2025-12-29 09:39:35 - apscheduler.scheduler - INFO - Added job "每日自动备份" to job store "default"
+2025-12-29 09:39:35 - apscheduler.scheduler - INFO - Scheduler started
+2025-12-29 09:39:35 - scheduler - INFO - 定时任务调度器已启动
+2025-12-29 09:39:35 - werkzeug - WARNING -  * Debugger is active!
+2025-12-29 09:39:35 - werkzeug - INFO -  * Debugger PIN: 916-841-577
+2025-12-29 09:39:40 - werkzeug - INFO - 127.0.0.1 - - [29/Dec/2025 09:39:40] "GET / HTTP/1.1" 200 -
+2025-12-29 09:39:40 - werkzeug - INFO - 127.0.0.1 - - [29/Dec/2025 09:39:40] "GET /api/devices HTTP/1.1" 200 -
+2025-12-29 09:39:40 - werkzeug - INFO - 127.0.0.1 - - [29/Dec/2025 09:39:40] "GET /api/status HTTP/1.1" 200 -
+2025-12-29 09:39:40 - werkzeug - INFO - 127.0.0.1 - - [29/Dec/2025 09:39:40] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-12-29 09:39:48 - werkzeug - INFO - 127.0.0.1 - - [29/Dec/2025 09:39:48] "GET /test HTTP/1.1" 200 -
+2025-12-29 09:39:48 - werkzeug - INFO - 127.0.0.1 - - [29/Dec/2025 09:39:48] "GET /api/status HTTP/1.1" 200 -
+2025-12-29 09:39:49 - werkzeug - INFO - 127.0.0.1 - - [29/Dec/2025 09:39:49] "GET /api/devices HTTP/1.1" 200 -
+2025-12-29 09:39:58 - __main__ - INFO - 手动备份请求: 设备 huawei
+2025-12-29 09:39:58 - __main__ - INFO - [huawei] 开始获取设备配置
+2025-12-29 09:39:58 - device_manager - INFO - [huawei] 执行命令获取配置: display current-configuration
+2025-12-29 09:39:58 - device_manager - INFO - [huawei] 设备未连接，尝试建立连接
+2025-12-29 09:39:58 - device_manager - INFO - [huawei] 开始连接设备: 192.168.8.10 (类型: huawei)
+2025-12-29 09:39:58 - device_manager - INFO - [huawei] 建立SSH/Telnet连接...
+2025-12-29 09:39:58 - paramiko.transport - INFO - Connected (version 1.99, client DOPRA-1.5)
+2025-12-29 09:40:00 - paramiko.transport - INFO - Authentication (password) successful!
+2025-12-29 09:40:01 - device_manager - INFO - [huawei] 成功连接到设备 192.168.8.10 (尝试 1/3)
+2025-12-29 09:40:01 - device_manager - INFO - [huawei] 执行命令: display current-configuration (尝试 1/2)
+2025-12-29 09:40:06 - device_manager - INFO - [huawei] 命令执行成功，输出长度: 1001 字符
+2025-12-29 09:40:06 - device_manager - INFO - [huawei] 配置获取成功，长度: 1001 字符
+2025-12-29 09:40:06 - __main__ - INFO - [huawei] 配置获取成功，开始保存备份
+2025-12-29 09:40:06 - backup_manager - INFO - [huawei] 保存备份文件: backups\huawei\20251229_094006.cfg
+2025-12-29 09:40:06 - backup_manager - INFO - [huawei] 备份文件保存成功: backups\huawei\20251229_094006.cfg (大小: 1052 字节)
+2025-12-29 09:40:06 - __main__ - INFO - [huawei] 备份成功: backups\huawei\20251229_094006.cfg
+2025-12-29 09:40:06 - backup_manager - INFO - 成功获取 3 条备份历史记录
+2025-12-29 09:40:06 - werkzeug - INFO - 127.0.0.1 - - [29/Dec/2025 09:40:06] "POST /api/backup HTTP/1.1" 200 -
+2025-12-29 09:40:12 - werkzeug - INFO - 127.0.0.1 - - [29/Dec/2025 09:40:12] "GET / HTTP/1.1" 200 -
+2025-12-29 09:40:12 - werkzeug - INFO - 127.0.0.1 - - [29/Dec/2025 09:40:12] "GET /api/devices HTTP/1.1" 200 -
+2025-12-29 09:40:12 - werkzeug - INFO - 127.0.0.1 - - [29/Dec/2025 09:40:12] "GET /api/status HTTP/1.1" 200 -
+2025-12-29 09:40:13 - __main__ - INFO - 获取设备 huawei 的备份历史
+2025-12-29 09:40:13 - backup_manager - INFO - 成功获取 3 条备份历史记录
+2025-12-29 09:40:13 - __main__ - INFO - 成功获取 3 条备份记录
+2025-12-29 09:40:13 - werkzeug - INFO - 127.0.0.1 - - [29/Dec/2025 09:40:13] "GET /api/backup/history?device_name=huawei HTTP/1.1" 200 -
+2025-12-29 09:40:16 - werkzeug - INFO - 127.0.0.1 - - [29/Dec/2025 09:40:16] "GET /api/backup/view?device_name=huawei&backup_file=20251229_094006.cfg HTTP/1.1" 200 -
+2025-12-29 09:40:43 - werkzeug - INFO - 127.0.0.1 - - [29/Dec/2025 09:40:43] "GET /api/status HTTP/1.1" 200 -
+2025-12-29 09:41:13 - werkzeug - INFO - 127.0.0.1 - - [29/Dec/2025 09:41:13] "GET /api/status HTTP/1.1" 200 -
+2025-12-29 09:41:43 - werkzeug - INFO - 127.0.0.1 - - [29/Dec/2025 09:41:43] "GET /api/status HTTP/1.1" 200 -
+2025-12-29 09:42:13 - werkzeug - INFO - 127.0.0.1 - - [29/Dec/2025 09:42:13] "GET /api/status HTTP/1.1" 200 -
+2025-12-29 09:42:43 - werkzeug - INFO - 127.0.0.1 - - [29/Dec/2025 09:42:43] "GET /api/status HTTP/1.1" 200 -
+2025-12-29 09:43:13 - werkzeug - INFO - 127.0.0.1 - - [29/Dec/2025 09:43:13] "GET /api/status HTTP/1.1" 200 -
+2025-12-29 09:44:27 - werkzeug - INFO - 127.0.0.1 - - [29/Dec/2025 09:44:27] "GET /api/status HTTP/1.1" 200 -
+2025-12-29 09:44:38 - diff_engine - INFO - 配置差异: 新增 1 行, 删除 50 行
+2025-12-29 09:44:38 - werkzeug - INFO - 127.0.0.1 - - [29/Dec/2025 09:44:38] "GET /api/diff?device_name=huawei&backup1=20251229_094006.cfg&backup2=20251229_092045.cfg HTTP/1.1" 200 -
+2025-12-29 09:44:42 - werkzeug - INFO - 127.0.0.1 - - [29/Dec/2025 09:44:42] "GET /api/status HTTP/1.1" 200 -
+2025-12-29 09:44:54 - werkzeug - INFO - 127.0.0.1 - - [29/Dec/2025 09:44:54] "GET /test HTTP/1.1" 200 -
+2025-12-29 09:44:54 - werkzeug - INFO - 127.0.0.1 - - [29/Dec/2025 09:44:54] "GET /api/status HTTP/1.1" 200 -
+2025-12-29 09:44:58 - werkzeug - INFO - 127.0.0.1 - - [29/Dec/2025 09:44:58] "GET /api/devices HTTP/1.1" 200 -
+2025-12-29 09:45:01 - __main__ - INFO - 获取设备 huawei 的备份历史
+2025-12-29 09:45:01 - backup_manager - INFO - 成功获取 3 条备份历史记录
+2025-12-29 09:45:01 - __main__ - INFO - 成功获取 3 条备份记录
+2025-12-29 09:45:01 - werkzeug - INFO - 127.0.0.1 - - [29/Dec/2025 09:45:01] "GET /api/backup/history?device_name=huawei HTTP/1.1" 200 -
+2025-12-29 09:45:05 - paramiko.transport - ERROR - Socket exception: 远程主机强迫关闭了一个现有的连接。 (10054)
+2025-12-29 09:45:09 - __main__ - INFO - 获取设备 huawei 的备份历史
+2025-12-29 09:45:09 - backup_manager - INFO - 成功获取 3 条备份历史记录
+2025-12-29 09:45:09 - __main__ - INFO - 成功获取 3 条备份记录
+2025-12-29 09:45:09 - werkzeug - INFO - 127.0.0.1 - - [29/Dec/2025 09:45:09] "GET /api/backup/history?device_name=huawei HTTP/1.1" 200 -
+2025-12-29 09:45:17 - diff_engine - INFO - 配置差异: 新增 1 行, 删除 50 行
+2025-12-29 09:45:17 - werkzeug - INFO - 127.0.0.1 - - [29/Dec/2025 09:45:17] "GET /api/diff?device_name=huawei&backup1=20251229_094006.cfg&backup2=20251229_092045.cfg HTTP/1.1" 200 -
+2025-12-29 09:45:29 - __main__ - INFO - 收到测试邮件请求
+2025-12-29 09:45:29 - diff_engine - INFO - 配置差异: 新增 2 行, 删除 1 行
+2025-12-29 09:45:52 - email_notifier - INFO - 告警邮件发送成功
+2025-12-29 09:45:52 - __main__ - INFO - 测试邮件发送成功
+2025-12-29 09:45:52 - werkzeug - INFO - 127.0.0.1 - - [29/Dec/2025 09:45:52] "POST /api/test/email HTTP/1.1" 200 -
+2025-12-29 09:48:09 - werkzeug - INFO - 127.0.0.1 - - [29/Dec/2025 09:48:09] "GET / HTTP/1.1" 200 -
+2025-12-29 09:48:09 - werkzeug - INFO - 127.0.0.1 - - [29/Dec/2025 09:48:09] "GET /api/devices HTTP/1.1" 200 -
+2025-12-29 09:48:09 - werkzeug - INFO - 127.0.0.1 - - [29/Dec/2025 09:48:09] "GET /api/status HTTP/1.1" 200 -
+2025-12-29 09:48:10 - __main__ - INFO - 获取设备 huawei 的备份历史
+2025-12-29 09:48:10 - backup_manager - INFO - 成功获取 3 条备份历史记录
+2025-12-29 09:48:10 - __main__ - INFO - 成功获取 3 条备份记录
+2025-12-29 09:48:10 - werkzeug - INFO - 127.0.0.1 - - [29/Dec/2025 09:48:10] "GET /api/backup/history?device_name=huawei HTTP/1.1" 200 -
+2025-12-29 09:48:13 - werkzeug - INFO - 127.0.0.1 - - [29/Dec/2025 09:48:13] "GET /api/diff?device_name=huawei&backup1=20251229_094006.cfg&backup2=20251229_094006.cfg HTTP/1.1" 200 -
+2025-12-29 09:48:15 - diff_engine - INFO - 配置差异: 新增 1 行, 删除 50 行
+2025-12-29 09:48:15 - werkzeug - INFO - 127.0.0.1 - - [29/Dec/2025 09:48:15] "GET /api/diff?device_name=huawei&backup1=20251229_094006.cfg&backup2=20251229_092045.cfg HTTP/1.1" 200 -
+2025-12-29 09:48:39 - werkzeug - INFO - 127.0.0.1 - - [29/Dec/2025 09:48:39] "GET /api/status HTTP/1.1" 200 -
+2025-12-29 09:48:45 - werkzeug - INFO - 127.0.0.1 - - [29/Dec/2025 09:48:45] "GET /api/devices HTTP/1.1" 200 -
+2025-12-29 09:48:45 - __main__ - INFO - 获取设备 huawei 的备份历史
+2025-12-29 09:48:45 - backup_manager - INFO - 成功获取 3 条备份历史记录
+2025-12-29 09:48:45 - __main__ - INFO - 成功获取 3 条备份记录
+2025-12-29 09:48:45 - werkzeug - INFO - 127.0.0.1 - - [29/Dec/2025 09:48:45] "GET /api/status HTTP/1.1" 200 -
+2025-12-29 09:48:45 - werkzeug - INFO - 127.0.0.1 - - [29/Dec/2025 09:48:45] "GET /api/backup/history?device_name=huawei HTTP/1.1" 200 -
+2025-12-29 09:48:46 - __main__ - INFO - 获取设备 huawei 的备份历史
+2025-12-29 09:48:46 - backup_manager - INFO - 成功获取 3 条备份历史记录
+2025-12-29 09:48:46 - __main__ - INFO - 成功获取 3 条备份记录
+2025-12-29 09:48:46 - werkzeug - INFO - 127.0.0.1 - - [29/Dec/2025 09:48:46] "GET /api/backup/history?device_name=huawei HTTP/1.1" 200 -
+2025-12-29 09:48:55 - werkzeug - INFO - 127.0.0.1 - - [29/Dec/2025 09:48:55] "GET /api/diff?device_name=huawei&backup1=20251229_094006.cfg&backup2=20251229_094006.cfg HTTP/1.1" 200 -
+2025-12-29 09:48:56 - werkzeug - INFO - 127.0.0.1 - - [29/Dec/2025 09:48:56] "GET /api/diff?device_name=huawei&backup1=20251229_094006.cfg&backup2=20251229_094006.cfg HTTP/1.1" 200 -
+2025-12-29 09:48:57 - werkzeug - INFO - 127.0.0.1 - - [29/Dec/2025 09:48:57] "GET /api/diff?device_name=huawei&backup1=20251229_094006.cfg&backup2=20251229_094006.cfg HTTP/1.1" 200 -
+2025-12-29 09:48:57 - diff_engine - INFO - 配置差异: 新增 1 行, 删除 50 行
+2025-12-29 09:48:57 - werkzeug - INFO - 127.0.0.1 - - [29/Dec/2025 09:48:57] "GET /api/diff?device_name=huawei&backup1=20251229_094006.cfg&backup2=20251229_092045.cfg HTTP/1.1" 200 -
+2025-12-29 09:49:09 - werkzeug - INFO - 127.0.0.1 - - [29/Dec/2025 09:49:09] "GET /test HTTP/1.1" 200 -
+2025-12-29 09:49:09 - werkzeug - INFO - 127.0.0.1 - - [29/Dec/2025 09:49:09] "GET /api/status HTTP/1.1" 200 -
+2025-12-29 09:49:35 - werkzeug - INFO - 127.0.0.1 - - [29/Dec/2025 09:49:35] "GET /api/devices HTTP/1.1" 200 -
+2025-12-29 09:49:39 - __main__ - INFO - 获取设备 huawei 的备份历史
+2025-12-29 09:49:39 - backup_manager - INFO - 成功获取 3 条备份历史记录
+2025-12-29 09:49:39 - __main__ - INFO - 成功获取 3 条备份记录
+2025-12-29 09:49:39 - werkzeug - INFO - 127.0.0.1 - - [29/Dec/2025 09:49:39] "GET /api/backup/history?device_name=huawei HTTP/1.1" 200 -
+2025-12-29 09:49:46 - __main__ - INFO - 收到手动触发定时备份请求
+2025-12-29 09:49:46 - scheduler - INFO - ============================================================
+2025-12-29 09:49:46 - __main__ - INFO - 定时备份任务已在后台启动
+2025-12-29 09:49:46 - scheduler - INFO - 开始执行定时备份任务
+2025-12-29 09:49:46 - werkzeug - INFO - 127.0.0.1 - - [29/Dec/2025 09:49:46] "POST /api/test/trigger-backup HTTP/1.1" 200 -
+2025-12-29 09:49:46 - scheduler - INFO - 当前时间: 2025-12-29 09:49:46
+2025-12-29 09:49:46 - scheduler - INFO - 需要备份的设备数量: 1
+2025-12-29 09:49:46 - scheduler - INFO - 开始备份设备: huawei
+2025-12-29 09:49:46 - scheduler - INFO - [huawei] 步骤1: 开始获取设备配置
+2025-12-29 09:49:46 - device_manager - INFO - [huawei] 执行命令获取配置: display current-configuration
+2025-12-29 09:49:46 - device_manager - WARNING - [huawei] 现有连接无效，重新连接
+2025-12-29 09:49:46 - device_manager - INFO - [huawei] 设备未连接，尝试建立连接
+2025-12-29 09:49:46 - device_manager - INFO - [huawei] 开始连接设备: 192.168.8.10 (类型: huawei)
+2025-12-29 09:49:46 - device_manager - INFO - [huawei] 建立SSH/Telnet连接...
+2025-12-29 09:49:46 - paramiko.transport - INFO - Connected (version 1.99, client DOPRA-1.5)
+2025-12-29 09:49:47 - werkzeug - INFO - 127.0.0.1 - - [29/Dec/2025 09:49:47] "GET /api/status HTTP/1.1" 200 -
+2025-12-29 09:49:48 - paramiko.transport - INFO - Authentication (password) successful!
+2025-12-29 09:49:49 - device_manager - INFO - [huawei] 成功连接到设备 192.168.8.10 (尝试 1/3)
+2025-12-29 09:49:49 - device_manager - INFO - [huawei] 执行命令: display current-configuration (尝试 1/2)
+2025-12-29 09:49:50 - werkzeug - INFO - 127.0.0.1 - - [29/Dec/2025 09:49:50] "GET /api/test/logs?lines=100 HTTP/1.1" 200 -
+2025-12-29 09:49:54 - device_manager - INFO - [huawei] 命令执行成功，输出长度: 1001 字符
+2025-12-29 09:49:54 - device_manager - INFO - [huawei] 配置获取成功，长度: 1001 字符
+2025-12-29 09:49:54 - scheduler - INFO - [huawei] 配置获取成功，配置长度: 1001 字符
+2025-12-29 09:49:54 - scheduler - INFO - [huawei] 步骤2: 获取最新备份记录
+2025-12-29 09:49:54 - backup_manager - INFO - 成功获取 3 条备份历史记录
+2025-12-29 09:49:54 - scheduler - INFO - [huawei] 找到最新备份: 20251229_094006.cfg
+2025-12-29 09:49:54 - scheduler - INFO - [huawei] 步骤3: 保存配置到备份文件
+2025-12-29 09:49:54 - backup_manager - INFO - [huawei] 保存备份文件: backups\huawei\20251229_094954.cfg
+2025-12-29 09:49:54 - backup_manager - INFO - [huawei] 备份文件保存成功: backups\huawei\20251229_094954.cfg (大小: 1052 字节)
+2025-12-29 09:49:54 - scheduler - INFO - [huawei] 备份文件已保存: backups\huawei\20251229_094954.cfg
+2025-12-29 09:49:54 - scheduler - INFO - [huawei] 步骤4: 对比配置差异
+2025-12-29 09:49:54 - scheduler - INFO - [huawei] 配置无变更
+2025-12-29 09:49:54 - scheduler - INFO - 设备 huawei 备份完成
+2025-12-29 09:49:54 - scheduler - INFO - 备份任务完成: 成功 1 个, 失败 0 个
+2025-12-29 09:49:54 - scheduler - INFO - 开始清理过期备份
+2025-12-29 09:49:54 - scheduler - INFO - 过期备份清理完成
+2025-12-29 09:49:54 - scheduler - INFO - ============================================================
+2025-12-29 09:49:58 - werkzeug - INFO - 127.0.0.1 - - [29/Dec/2025 09:49:58] "GET /api/test/logs?lines=100 HTTP/1.1" 200 -
+2025-12-29 09:51:48 - werkzeug - INFO - 127.0.0.1 - - [29/Dec/2025 09:51:48] "GET /api/test/logs?lines=100 HTTP/1.1" 200 -
+2025-12-29 09:51:58 - werkzeug - INFO - 127.0.0.1 - - [29/Dec/2025 09:51:58] "GET /api/test/logs?lines=100 HTTP/1.1" 200 -
+2025-12-29 09:51:59 - werkzeug - INFO - 127.0.0.1 - - [29/Dec/2025 09:51:59] "GET /api/test/logs?lines=100 HTTP/1.1" 200 -
+2025-12-29 09:51:59 - werkzeug - INFO - 127.0.0.1 - - [29/Dec/2025 09:51:59] "GET /api/test/logs?lines=100 HTTP/1.1" 200 -
+2025-12-29 09:51:59 - werkzeug - INFO - 127.0.0.1 - - [29/Dec/2025 09:51:59] "GET /api/test/logs?lines=100 HTTP/1.1" 200 -
+2025-12-29 09:51:59 - werkzeug - INFO - 127.0.0.1 - - [29/Dec/2025 09:51:59] "GET /api/test/logs?lines=100 HTTP/1.1" 200 -
+2025-12-29 09:52:11 - __main__ - INFO - 获取设备 huawei 的备份历史
+2025-12-29 09:52:11 - backup_manager - INFO - 成功获取 4 条备份历史记录
+2025-12-29 09:52:11 - __main__ - INFO - 成功获取 4 条备份记录
+2025-12-29 09:52:11 - werkzeug - INFO - 127.0.0.1 - - [29/Dec/2025 09:52:11] "GET /api/backup/history?device_name=huawei HTTP/1.1" 200 -
+2025-12-29 09:52:11 - __main__ - INFO - 获取设备 huawei 的备份历史
+2025-12-29 09:52:11 - backup_manager - INFO - 成功获取 4 条备份历史记录
+2025-12-29 09:52:11 - __main__ - INFO - 成功获取 4 条备份记录
+2025-12-29 09:52:11 - werkzeug - INFO - 127.0.0.1 - - [29/Dec/2025 09:52:11] "GET /api/backup/history?device_name=huawei HTTP/1.1" 200 -
+2025-12-29 09:52:18 - werkzeug - INFO - 127.0.0.1 - - [29/Dec/2025 09:52:18] "GET / HTTP/1.1" 200 -
+2025-12-29 09:52:18 - werkzeug - INFO - 127.0.0.1 - - [29/Dec/2025 09:52:18] "GET /api/devices HTTP/1.1" 200 -
+2025-12-29 09:52:18 - werkzeug - INFO - 127.0.0.1 - - [29/Dec/2025 09:52:18] "GET /api/status HTTP/1.1" 200 -
+2025-12-29 09:52:19 - __main__ - INFO - 获取设备 huawei 的备份历史
+2025-12-29 09:52:19 - backup_manager - INFO - 成功获取 4 条备份历史记录
+2025-12-29 09:52:19 - __main__ - INFO - 成功获取 4 条备份记录
+2025-12-29 09:52:19 - werkzeug - INFO - 127.0.0.1 - - [29/Dec/2025 09:52:19] "GET /api/backup/history?device_name=huawei HTTP/1.1" 200 -
+2025-12-29 09:52:20 - werkzeug - INFO - 127.0.0.1 - - [29/Dec/2025 09:52:20] "GET /api/diff?device_name=huawei&backup1=20251229_094954.cfg&backup2=20251229_094954.cfg HTTP/1.1" 200 -
+2025-12-29 09:52:21 - werkzeug - INFO - 127.0.0.1 - - [29/Dec/2025 09:52:21] "GET /api/diff?device_name=huawei&backup1=20251229_094954.cfg&backup2=20251229_094006.cfg HTTP/1.1" 200 -
+2025-12-29 09:52:25 - werkzeug - INFO - 127.0.0.1 - - [29/Dec/2025 09:52:25] "GET /api/backup/view?device_name=huawei&backup_file=20251229_094006.cfg HTTP/1.1" 200 -
+2025-12-29 09:52:34 - diff_engine - INFO - 配置差异: 新增 1 行, 删除 50 行
+2025-12-29 09:52:34 - werkzeug - INFO - 127.0.0.1 - - [29/Dec/2025 09:52:34] "GET /api/diff?device_name=huawei&backup1=20251229_094954.cfg&backup2=20251229_092045.cfg HTTP/1.1" 200 -
+2025-12-29 09:52:48 - werkzeug - INFO - 127.0.0.1 - - [29/Dec/2025 09:52:48] "GET /api/status HTTP/1.1" 200 -
+2025-12-29 09:53:18 - werkzeug - INFO - 127.0.0.1 - - [29/Dec/2025 09:53:18] "GET /api/status HTTP/1.1" 200 -
+2025-12-29 09:53:18 - __main__ - INFO - 手动备份请求: 设备 huawei
+2025-12-29 09:53:18 - __main__ - INFO - [huawei] 开始获取设备配置
+2025-12-29 09:53:18 - device_manager - INFO - [huawei] 执行命令获取配置: display current-configuration
+2025-12-29 09:53:18 - device_manager - INFO - [huawei] 执行命令: display current-configuration (尝试 1/2)
+2025-12-29 09:53:23 - device_manager - INFO - [huawei] 命令执行成功，输出长度: 1020 字符
+2025-12-29 09:53:23 - device_manager - INFO - [huawei] 配置获取成功，长度: 1020 字符
+2025-12-29 09:53:23 - __main__ - INFO - [huawei] 配置获取成功，开始保存备份
+2025-12-29 09:53:23 - backup_manager - INFO - [huawei] 保存备份文件: backups\huawei\20251229_095323.cfg
+2025-12-29 09:53:23 - backup_manager - INFO - [huawei] 备份文件保存成功: backups\huawei\20251229_095323.cfg (大小: 1074 字节)
+2025-12-29 09:53:23 - __main__ - INFO - [huawei] 备份成功: backups\huawei\20251229_095323.cfg
+2025-12-29 09:53:23 - backup_manager - INFO - 成功获取 5 条备份历史记录
+2025-12-29 09:53:23 - werkzeug - INFO - 127.0.0.1 - - [29/Dec/2025 09:53:23] "POST /api/backup HTTP/1.1" 200 -
+2025-12-29 09:53:23 - __main__ - INFO - 获取设备 huawei 的备份历史
+2025-12-29 09:53:23 - backup_manager - INFO - 成功获取 5 条备份历史记录
+2025-12-29 09:53:23 - werkzeug - INFO - 127.0.0.1 - - [29/Dec/2025 09:53:23] "GET /api/status HTTP/1.1" 200 -
+2025-12-29 09:53:23 - __main__ - INFO - 成功获取 5 条备份记录
+2025-12-29 09:53:23 - werkzeug - INFO - 127.0.0.1 - - [29/Dec/2025 09:53:23] "GET /api/backup/history?device_name=huawei HTTP/1.1" 200 -
+2025-12-29 09:53:26 - werkzeug - INFO - 127.0.0.1 - - [29/Dec/2025 09:53:26] "GET /api/diff?device_name=huawei&backup1=20251229_095323.cfg&backup2=20251229_095323.cfg HTTP/1.1" 200 -
+2025-12-29 09:53:28 - werkzeug - INFO - 127.0.0.1 - - [29/Dec/2025 09:53:28] "GET /api/diff?device_name=huawei&backup1=20251229_095323.cfg&backup2=20251229_095323.cfg HTTP/1.1" 200 -
+2025-12-29 09:53:30 - werkzeug - INFO - 127.0.0.1 - - [29/Dec/2025 09:53:30] "GET /api/backup/view?device_name=huawei&backup_file=20251229_095323.cfg HTTP/1.1" 200 -
+2025-12-29 09:53:36 - werkzeug - INFO - 127.0.0.1 - - [29/Dec/2025 09:53:36] "GET /api/backup/view?device_name=huawei&backup_file=20251229_094954.cfg HTTP/1.1" 200 -
+2025-12-29 09:53:41 - werkzeug - INFO - 127.0.0.1 - - [29/Dec/2025 09:53:41] "GET /api/backup/view?device_name=huawei&backup_file=20251229_095323.cfg HTTP/1.1" 200 -
+2025-12-29 09:53:43 - werkzeug - INFO - 127.0.0.1 - - [29/Dec/2025 09:53:43] "GET /api/diff?device_name=huawei&backup1=20251229_095323.cfg&backup2=20251229_095323.cfg HTTP/1.1" 200 -
+2025-12-29 09:53:45 - diff_engine - INFO - 配置差异: 新增 0 行, 删除 4 行
+2025-12-29 09:53:45 - werkzeug - INFO - 127.0.0.1 - - [29/Dec/2025 09:53:45] "GET /api/diff?device_name=huawei&backup1=20251229_095323.cfg&backup2=20251229_094954.cfg HTTP/1.1" 200 -
+2025-12-29 09:53:48 - werkzeug - INFO - 127.0.0.1 - - [29/Dec/2025 09:53:48] "GET /api/status HTTP/1.1" 200 -
+2025-12-29 09:54:18 - werkzeug - INFO - 127.0.0.1 - - [29/Dec/2025 09:54:18] "GET /api/status HTTP/1.1" 200 -
+2025-12-29 09:54:48 - werkzeug - INFO - 127.0.0.1 - - [29/Dec/2025 09:54:48] "GET /api/status HTTP/1.1" 200 -
+2025-12-29 09:55:12 - diff_engine - INFO - 配置差异: 新增 0 行, 删除 4 行
+2025-12-29 09:55:12 - werkzeug - INFO - 127.0.0.1 - - [29/Dec/2025 09:55:12] "GET /api/diff?device_name=huawei&backup1=20251229_095323.cfg&backup2=20251229_094954.cfg HTTP/1.1" 200 -
+2025-12-29 09:55:13 - werkzeug - INFO - 127.0.0.1 - - [29/Dec/2025 09:55:13] "GET /api/diff?device_name=huawei&backup1=20251229_095323.cfg&backup2=20251229_095323.cfg HTTP/1.1" 200 -
+2025-12-29 09:55:15 - werkzeug - INFO - 127.0.0.1 - - [29/Dec/2025 09:55:15] "GET /api/diff?device_name=huawei&backup1=20251229_095323.cfg&backup2=20251229_095323.cfg HTTP/1.1" 200 -
+2025-12-29 09:55:16 - diff_engine - INFO - 配置差异: 新增 0 行, 删除 4 行
+2025-12-29 09:55:16 - werkzeug - INFO - 127.0.0.1 - - [29/Dec/2025 09:55:16] "GET /api/diff?device_name=huawei&backup1=20251229_095323.cfg&backup2=20251229_094006.cfg HTTP/1.1" 200 -
+2025-12-29 09:55:18 - werkzeug - INFO - 127.0.0.1 - - [29/Dec/2025 09:55:18] "GET /api/status HTTP/1.1" 200 -
+2025-12-29 09:55:19 - diff_engine - INFO - 配置差异: 新增 0 行, 删除 4 行
+2025-12-29 09:55:19 - werkzeug - INFO - 127.0.0.1 - - [29/Dec/2025 09:55:19] "GET /api/diff?device_name=huawei&backup1=20251229_095323.cfg&backup2=20251229_094954.cfg HTTP/1.1" 200 -
+2025-12-29 09:55:48 - werkzeug - INFO - 127.0.0.1 - - [29/Dec/2025 09:55:48] "GET /api/status HTTP/1.1" 200 -
+2025-12-29 09:56:18 - werkzeug - INFO - 127.0.0.1 - - [29/Dec/2025 09:56:18] "GET /api/status HTTP/1.1" 200 -
+2025-12-29 09:56:48 - werkzeug - INFO - 127.0.0.1 - - [29/Dec/2025 09:56:48] "GET /api/status HTTP/1.1" 200 -
+2025-12-29 09:57:27 - werkzeug - INFO - 127.0.0.1 - - [29/Dec/2025 09:57:27] "GET /api/status HTTP/1.1" 200 -
+2025-12-29 09:58:21 - paramiko.transport - ERROR - Socket exception: 远程主机强迫关闭了一个现有的连接。 (10054)
+2025-12-29 09:58:27 - werkzeug - INFO - 127.0.0.1 - - [29/Dec/2025 09:58:27] "GET /api/status HTTP/1.1" 200 -
+2025-12-29 09:59:27 - werkzeug - INFO - 127.0.0.1 - - [29/Dec/2025 09:59:27] "GET /api/status HTTP/1.1" 200 -
+2025-12-29 09:59:53 - werkzeug - INFO - 127.0.0.1 - - [29/Dec/2025 09:59:53] "GET /api/status HTTP/1.1" 200 -
+2025-12-29 09:59:57 - werkzeug - INFO - 127.0.0.1 - - [29/Dec/2025 09:59:57] "GET /api/backup/view?device_name=huawei&backup_file=20251229_094954.cfg HTTP/1.1" 200 -
+2025-12-29 10:00:18 - werkzeug - INFO - 127.0.0.1 - - [29/Dec/2025 10:00:18] "GET /api/status HTTP/1.1" 200 -
+2025-12-29 10:00:48 - werkzeug - INFO - 127.0.0.1 - - [29/Dec/2025 10:00:48] "GET /api/status HTTP/1.1" 200 -
+2025-12-29 10:08:41 - __main__ - INFO - ============================================================
+2025-12-29 10:08:41 - __main__ - INFO - 网络设备配置备份与管理系统启动
+2025-12-29 10:08:41 - __main__ - INFO - 日志文件: logs\network_backup.log
+2025-12-29 10:08:41 - __main__ - INFO - ============================================================
+2025-12-29 10:08:41 - scheduler - INFO - 使用时区: Asia/Shanghai
+2025-12-29 10:08:41 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-12-29 10:08:41 - scheduler - INFO - 定时任务已设置: 每天 10:10 执行备份 (时区: Asia/Shanghai)
+2025-12-29 10:08:41 - apscheduler.scheduler - INFO - Added job "每日自动备份" to job store "default"
+2025-12-29 10:08:41 - apscheduler.scheduler - INFO - Scheduler started
+2025-12-29 10:08:41 - scheduler - INFO - 定时任务调度器已启动
+2025-12-29 10:08:57 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.8.253:5000
+2025-12-29 10:08:57 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-12-29 10:08:57 - werkzeug - INFO -  * Restarting with stat
+2025-12-29 10:08:57 - __main__ - INFO - ============================================================
+2025-12-29 10:08:57 - __main__ - INFO - 网络设备配置备份与管理系统启动
+2025-12-29 10:08:57 - __main__ - INFO - 日志文件: logs\network_backup.log
+2025-12-29 10:08:57 - __main__ - INFO - ============================================================
+2025-12-29 10:08:57 - scheduler - INFO - 使用时区: Asia/Shanghai
+2025-12-29 10:08:57 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-12-29 10:08:57 - scheduler - INFO - 定时任务已设置: 每天 10:10 执行备份 (时区: Asia/Shanghai)
+2025-12-29 10:08:57 - apscheduler.scheduler - INFO - Added job "每日自动备份" to job store "default"
+2025-12-29 10:08:57 - apscheduler.scheduler - INFO - Scheduler started
+2025-12-29 10:08:57 - scheduler - INFO - 定时任务调度器已启动
+2025-12-29 10:08:57 - werkzeug - WARNING -  * Debugger is active!
+2025-12-29 10:08:57 - werkzeug - INFO -  * Debugger PIN: 124-602-473
+2025-12-29 10:09:00 - werkzeug - INFO - 127.0.0.1 - - [29/Dec/2025 10:09:00] "GET / HTTP/1.1" 200 -
+2025-12-29 10:09:00 - werkzeug - INFO - 127.0.0.1 - - [29/Dec/2025 10:09:00] "GET /api/devices HTTP/1.1" 200 -
+2025-12-29 10:09:00 - werkzeug - INFO - 127.0.0.1 - - [29/Dec/2025 10:09:00] "GET /api/status HTTP/1.1" 200 -
+2025-12-29 10:09:07 - __main__ - INFO - 获取设备 huawei 的备份历史
+2025-12-29 10:09:07 - backup_manager - INFO - 成功获取 5 条备份历史记录
+2025-12-29 10:09:07 - __main__ - INFO - 成功获取 5 条备份记录
+2025-12-29 10:09:07 - werkzeug - INFO - 127.0.0.1 - - [29/Dec/2025 10:09:07] "GET /api/backup/history?device_name=huawei HTTP/1.1" 200 -
+2025-12-29 10:09:30 - werkzeug - INFO - 127.0.0.1 - - [29/Dec/2025 10:09:30] "GET /api/status HTTP/1.1" 200 -
+2025-12-29 10:10:00 - apscheduler.executors.default - INFO - Running job "每日自动备份 (trigger: cron[hour='10', minute='10'], next run at: 2025-12-29 10:10:00 CST)" (scheduled at 2025-12-29 10:10:00+08:00)
+2025-12-29 10:10:00 - scheduler - INFO - ============================================================
+2025-12-29 10:10:00 - scheduler - INFO - 开始执行定时备份任务
+2025-12-29 10:10:00 - scheduler - INFO - 当前时间: 2025-12-29 10:10:00
+2025-12-29 10:10:00 - scheduler - INFO - 需要备份的设备数量: 1
+2025-12-29 10:10:00 - scheduler - INFO - 开始备份设备: huawei
+2025-12-29 10:10:00 - scheduler - INFO - [huawei] 步骤1: 开始获取设备配置
+2025-12-29 10:10:00 - device_manager - INFO - [huawei] 执行命令获取配置: display current-configuration
+2025-12-29 10:10:00 - device_manager - INFO - [huawei] 设备未连接，尝试建立连接
+2025-12-29 10:10:00 - device_manager - INFO - [huawei] 开始连接设备: 192.168.8.10 (类型: huawei)
+2025-12-29 10:10:00 - device_manager - INFO - [huawei] 建立SSH/Telnet连接...
+2025-12-29 10:10:00 - apscheduler.executors.default - INFO - Running job "每日自动备份 (trigger: cron[hour='10', minute='10'], next run at: 2025-12-29 10:10:00 CST)" (scheduled at 2025-12-29 10:10:00+08:00)
+2025-12-29 10:10:00 - scheduler - INFO - ============================================================
+2025-12-29 10:10:00 - scheduler - INFO - 开始执行定时备份任务
+2025-12-29 10:10:00 - scheduler - INFO - 当前时间: 2025-12-29 10:10:00
+2025-12-29 10:10:00 - scheduler - INFO - 需要备份的设备数量: 1
+2025-12-29 10:10:00 - scheduler - INFO - 开始备份设备: huawei
+2025-12-29 10:10:00 - scheduler - INFO - [huawei] 步骤1: 开始获取设备配置
+2025-12-29 10:10:00 - device_manager - INFO - [huawei] 执行命令获取配置: display current-configuration
+2025-12-29 10:10:00 - device_manager - INFO - [huawei] 设备未连接，尝试建立连接
+2025-12-29 10:10:00 - device_manager - INFO - [huawei] 开始连接设备: 192.168.8.10 (类型: huawei)
+2025-12-29 10:10:00 - device_manager - INFO - [huawei] 建立SSH/Telnet连接...
+2025-12-29 10:10:00 - paramiko.transport - INFO - Connected (version 1.99, client DOPRA-1.5)
+2025-12-29 10:10:00 - paramiko.transport - INFO - Connected (version 1.99, client DOPRA-1.5)
+2025-12-29 10:10:00 - werkzeug - INFO - 127.0.0.1 - - [29/Dec/2025 10:10:00] "GET /api/status HTTP/1.1" 200 -
+2025-12-29 10:10:01 - paramiko.transport - INFO - Authentication (password) successful!
+2025-12-29 10:10:01 - paramiko.transport - INFO - Authentication (password) successful!
+2025-12-29 10:10:03 - device_manager - INFO - [huawei] 成功连接到设备 192.168.8.10 (尝试 1/3)
+2025-12-29 10:10:03 - device_manager - INFO - [huawei] 执行命令: display current-configuration (尝试 1/2)
+2025-12-29 10:10:03 - device_manager - INFO - [huawei] 成功连接到设备 192.168.8.10 (尝试 1/3)
+2025-12-29 10:10:03 - device_manager - INFO - [huawei] 执行命令: display current-configuration (尝试 1/2)
+2025-12-29 10:10:09 - device_manager - INFO - [huawei] 命令执行成功，输出长度: 1015 字符
+2025-12-29 10:10:09 - device_manager - INFO - [huawei] 配置获取成功，长度: 1015 字符
+2025-12-29 10:10:09 - scheduler - INFO - [huawei] 配置获取成功，配置长度: 1015 字符
+2025-12-29 10:10:09 - scheduler - INFO - [huawei] 步骤2: 获取最新备份记录
+2025-12-29 10:10:09 - backup_manager - INFO - 成功获取 5 条备份历史记录
+2025-12-29 10:10:09 - scheduler - INFO - [huawei] 找到最新备份: 20251229_095323.cfg
+2025-12-29 10:10:09 - scheduler - INFO - [huawei] 步骤3: 保存配置到备份文件
+2025-12-29 10:10:09 - backup_manager - INFO - [huawei] 保存备份文件: backups\huawei\20251229_101009.cfg
+2025-12-29 10:10:09 - backup_manager - INFO - [huawei] 备份文件保存成功: backups\huawei\20251229_101009.cfg (大小: 1068 字节)
+2025-12-29 10:10:09 - scheduler - INFO - [huawei] 备份文件已保存: backups\huawei\20251229_101009.cfg
+2025-12-29 10:10:09 - scheduler - INFO - [huawei] 步骤4: 对比配置差异
+2025-12-29 10:10:09 - diff_engine - INFO - 配置差异: 新增 0 行, 删除 2 行
+2025-12-29 10:10:09 - scheduler - WARNING - [huawei] 配置已变更: 新增 0 行, 删除 2 行
+2025-12-29 10:10:09 - scheduler - INFO - [huawei] 步骤5: 发送配置变更告警邮件
+2025-12-29 10:10:10 - device_manager - INFO - [huawei] 命令执行成功，输出长度: 1015 字符
+2025-12-29 10:10:10 - device_manager - INFO - [huawei] 配置获取成功，长度: 1015 字符
+2025-12-29 10:10:10 - scheduler - INFO - [huawei] 配置获取成功，配置长度: 1015 字符
+2025-12-29 10:10:10 - scheduler - INFO - [huawei] 步骤2: 获取最新备份记录
+2025-12-29 10:10:10 - backup_manager - INFO - 成功获取 6 条备份历史记录
+2025-12-29 10:10:10 - scheduler - INFO - [huawei] 找到最新备份: 20251229_101009.cfg
+2025-12-29 10:10:10 - scheduler - INFO - [huawei] 步骤3: 保存配置到备份文件
+2025-12-29 10:10:10 - backup_manager - INFO - [huawei] 保存备份文件: backups\huawei\20251229_101010.cfg
+2025-12-29 10:10:10 - backup_manager - INFO - [huawei] 备份文件保存成功: backups\huawei\20251229_101010.cfg (大小: 1068 字节)
+2025-12-29 10:10:10 - scheduler - INFO - [huawei] 备份文件已保存: backups\huawei\20251229_101010.cfg
+2025-12-29 10:10:10 - scheduler - INFO - [huawei] 步骤4: 对比配置差异
+2025-12-29 10:10:10 - scheduler - INFO - [huawei] 配置无变更
+2025-12-29 10:10:10 - scheduler - INFO - 设备 huawei 备份完成
+2025-12-29 10:10:10 - scheduler - INFO - 备份任务完成: 成功 1 个, 失败 0 个
+2025-12-29 10:10:10 - scheduler - INFO - 开始清理过期备份
+2025-12-29 10:10:10 - scheduler - INFO - 过期备份清理完成
+2025-12-29 10:10:10 - scheduler - INFO - ============================================================
+2025-12-29 10:10:10 - apscheduler.executors.default - INFO - Job "每日自动备份 (trigger: cron[hour='10', minute='10'], next run at: 2025-12-30 10:10:00 CST)" executed successfully
+2025-12-29 10:10:27 - email_notifier - INFO - 告警邮件发送成功
+2025-12-29 10:10:27 - scheduler - INFO - [huawei] 告警邮件发送成功
+2025-12-29 10:10:27 - scheduler - INFO - 设备 huawei 备份完成
+2025-12-29 10:10:27 - scheduler - INFO - 备份任务完成: 成功 1 个, 失败 0 个
+2025-12-29 10:10:27 - scheduler - INFO - 开始清理过期备份
+2025-12-29 10:10:27 - scheduler - INFO - 过期备份清理完成
+2025-12-29 10:10:27 - scheduler - INFO - ============================================================
+2025-12-29 10:10:27 - apscheduler.executors.default - INFO - Job "每日自动备份 (trigger: cron[hour='10', minute='10'], next run at: 2025-12-30 10:10:00 CST)" executed successfully
+2025-12-29 10:10:30 - werkzeug - INFO - 127.0.0.1 - - [29/Dec/2025 10:10:30] "GET /api/status HTTP/1.1" 200 -
+2025-12-29 10:11:01 - werkzeug - INFO - 127.0.0.1 - - [29/Dec/2025 10:11:01] "GET /api/status HTTP/1.1" 200 -
+2025-12-29 10:11:31 - werkzeug - INFO - 127.0.0.1 - - [29/Dec/2025 10:11:31] "GET /api/status HTTP/1.1" 200 -
+2025-12-29 10:12:01 - werkzeug - INFO - 127.0.0.1 - - [29/Dec/2025 10:12:01] "GET /api/status HTTP/1.1" 200 -
+2025-12-29 10:13:27 - werkzeug - INFO - 127.0.0.1 - - [29/Dec/2025 10:13:27] "GET /api/status HTTP/1.1" 200 -
+2025-12-29 10:14:27 - werkzeug - INFO - 127.0.0.1 - - [29/Dec/2025 10:14:27] "GET /api/status HTTP/1.1" 200 -
+2025-12-29 10:15:07 - paramiko.transport - ERROR - Socket exception: 远程主机强迫关闭了一个现有的连接。 (10054)
+2025-12-29 10:15:07 - paramiko.transport - ERROR - Socket exception: 远程主机强迫关闭了一个现有的连接。 (10054)

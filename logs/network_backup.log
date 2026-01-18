@@ -1,0 +1,112 @@
+2025-12-30 10:13:20 - __main__ - INFO - ============================================================
+2025-12-30 10:13:20 - __main__ - INFO - 网络设备配置备份与管理系统启动
+2025-12-30 10:13:20 - __main__ - INFO - 日志文件: logs\network_backup.log
+2025-12-30 10:13:20 - __main__ - INFO - ============================================================
+2025-12-30 10:13:20 - scheduler - INFO - 使用时区: Asia/Shanghai
+2025-12-30 10:13:20 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-12-30 10:13:20 - scheduler - INFO - 定时任务已设置: 每天 10:10 执行备份 (时区: Asia/Shanghai)
+2025-12-30 10:13:20 - apscheduler.scheduler - INFO - Added job "每日自动备份" to job store "default"
+2025-12-30 10:13:20 - apscheduler.scheduler - INFO - Scheduler started
+2025-12-30 10:13:20 - scheduler - INFO - 定时任务调度器已启动
+2025-12-30 10:13:36 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.8.253:5000
+2025-12-30 10:13:36 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-12-30 10:13:36 - werkzeug - INFO -  * Restarting with stat
+2025-12-30 10:13:37 - __main__ - INFO - ============================================================
+2025-12-30 10:13:37 - __main__ - INFO - 网络设备配置备份与管理系统启动
+2025-12-30 10:13:37 - __main__ - INFO - 日志文件: logs\network_backup.log
+2025-12-30 10:13:37 - __main__ - INFO - ============================================================
+2025-12-30 10:13:37 - scheduler - INFO - 使用时区: Asia/Shanghai
+2025-12-30 10:13:37 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-12-30 10:13:37 - scheduler - INFO - 定时任务已设置: 每天 10:10 执行备份 (时区: Asia/Shanghai)
+2025-12-30 10:13:37 - apscheduler.scheduler - INFO - Added job "每日自动备份" to job store "default"
+2025-12-30 10:13:37 - apscheduler.scheduler - INFO - Scheduler started
+2025-12-30 10:13:37 - scheduler - INFO - 定时任务调度器已启动
+2025-12-30 10:13:37 - werkzeug - WARNING -  * Debugger is active!
+2025-12-30 10:13:37 - werkzeug - INFO -  * Debugger PIN: 124-602-473
+2025-12-30 10:13:40 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2025 10:13:40] "GET / HTTP/1.1" 200 -
+2025-12-30 10:13:40 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2025 10:13:40] "GET /api/devices HTTP/1.1" 200 -
+2025-12-30 10:13:40 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2025 10:13:40] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-12-30 10:13:40 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2025 10:13:40] "GET /api/status HTTP/1.1" 200 -
+2025-12-30 10:13:48 - __main__ - INFO - 获取设备 huawei 的备份历史
+2025-12-30 10:13:48 - backup_manager - INFO - 成功获取 7 条备份历史记录
+2025-12-30 10:13:48 - __main__ - INFO - 成功获取 7 条备份记录
+2025-12-30 10:13:48 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2025 10:13:48] "GET /api/backup/history?device_name=huawei HTTP/1.1" 200 -
+2025-12-30 10:13:49 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2025 10:13:49] "GET /api/backup/view?device_name=huawei&backup_file=20251229_101010.cfg HTTP/1.1" 200 -
+2025-12-30 10:13:52 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2025 10:13:52] "GET /api/diff?device_name=huawei&backup1=20251229_101010.cfg&backup2=20251229_101010.cfg HTTP/1.1" 200 -
+2025-12-30 10:13:54 - diff_engine - INFO - 配置差异: 新增 1 行, 删除 1 行
+2025-12-30 10:13:54 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2025 10:13:54] "GET /api/diff?device_name=huawei&backup1=20251229_101010.cfg&backup2=20251229_095323.cfg HTTP/1.1" 200 -
+2025-12-30 10:14:11 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2025 10:14:11] "GET /api/status HTTP/1.1" 200 -
+2025-12-30 10:14:13 - diff_engine - INFO - 配置差异: 新增 1 行, 删除 52 行
+2025-12-30 10:14:13 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2025 10:14:13] "GET /api/diff?device_name=huawei&backup1=20251229_101010.cfg&backup2=20251229_092045.cfg HTTP/1.1" 200 -
+2025-12-30 10:14:26 - diff_engine - INFO - 配置差异: 新增 0 行, 删除 2 行
+2025-12-30 10:14:26 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2025 10:14:26] "GET /api/diff?device_name=huawei&backup1=20251229_101010.cfg&backup2=20251229_094006.cfg HTTP/1.1" 200 -
+2025-12-30 10:14:27 - diff_engine - INFO - 配置差异: 新增 1 行, 删除 52 行
+2025-12-30 10:14:27 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2025 10:14:27] "GET /api/diff?device_name=huawei&backup1=20251229_101010.cfg&backup2=20251229_092045.cfg HTTP/1.1" 200 -
+2025-12-30 10:14:34 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2025 10:14:34] "GET /test HTTP/1.1" 200 -
+2025-12-30 10:14:34 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2025 10:14:34] "GET /api/status HTTP/1.1" 200 -
+2025-12-30 10:14:35 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2025 10:14:35] "GET /api/devices HTTP/1.1" 200 -
+2025-12-30 10:14:42 - __main__ - INFO - 获取设备 huawei 的备份历史
+2025-12-30 10:14:42 - backup_manager - INFO - 成功获取 7 条备份历史记录
+2025-12-30 10:14:42 - __main__ - INFO - 成功获取 7 条备份记录
+2025-12-30 10:14:42 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2025 10:14:42] "GET /api/backup/history?device_name=huawei HTTP/1.1" 200 -
+2025-12-30 10:14:44 - __main__ - INFO - 获取设备 huawei 的备份历史
+2025-12-30 10:14:44 - backup_manager - INFO - 成功获取 7 条备份历史记录
+2025-12-30 10:14:44 - __main__ - INFO - 成功获取 7 条备份记录
+2025-12-30 10:14:44 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2025 10:14:44] "GET /api/backup/history?device_name=huawei HTTP/1.1" 200 -
+2025-12-30 10:14:48 - diff_engine - INFO - 配置差异: 新增 0 行, 删除 2 行
+2025-12-30 10:14:48 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2025 10:14:48] "GET /api/diff?device_name=huawei&backup1=20251229_101010.cfg&backup2=20251229_094006.cfg HTTP/1.1" 200 -
+2025-12-30 10:19:38 - __main__ - INFO - 收到测试邮件请求
+2025-12-30 10:19:38 - diff_engine - INFO - 配置差异: 新增 2 行, 删除 1 行
+2025-12-30 10:19:48 - email_notifier - INFO - 告警邮件发送成功
+2025-12-30 10:19:48 - __main__ - INFO - 测试邮件发送成功
+2025-12-30 10:19:48 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2025 10:19:48] "POST /api/test/email HTTP/1.1" 200 -
+2025-12-30 10:45:23 - __main__ - INFO - ============================================================
+2025-12-30 10:45:23 - __main__ - INFO - 网络设备配置备份与管理系统启动
+2025-12-30 10:45:23 - __main__ - INFO - 日志文件: logs\network_backup.log
+2025-12-30 10:45:23 - __main__ - INFO - ============================================================
+2025-12-30 10:45:23 - scheduler - INFO - 使用时区: Asia/Shanghai
+2025-12-30 10:45:23 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-12-30 10:45:23 - scheduler - INFO - 定时任务已设置: 每天 10:10 执行备份 (时区: Asia/Shanghai)
+2025-12-30 10:45:23 - apscheduler.scheduler - INFO - Added job "每日自动备份" to job store "default"
+2025-12-30 10:45:23 - apscheduler.scheduler - INFO - Scheduler started
+2025-12-30 10:45:23 - scheduler - INFO - 定时任务调度器已启动
+2025-12-30 10:45:31 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.8.253:5000
+2025-12-30 10:45:31 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-12-30 10:45:31 - werkzeug - INFO -  * Restarting with stat
+2025-12-30 10:45:31 - __main__ - INFO - ============================================================
+2025-12-30 10:45:31 - __main__ - INFO - 网络设备配置备份与管理系统启动
+2025-12-30 10:45:31 - __main__ - INFO - 日志文件: logs\network_backup.log
+2025-12-30 10:45:31 - __main__ - INFO - ============================================================
+2025-12-30 10:45:31 - scheduler - INFO - 使用时区: Asia/Shanghai
+2025-12-30 10:45:31 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-12-30 10:45:31 - scheduler - INFO - 定时任务已设置: 每天 10:10 执行备份 (时区: Asia/Shanghai)
+2025-12-30 10:45:31 - apscheduler.scheduler - INFO - Added job "每日自动备份" to job store "default"
+2025-12-30 10:45:31 - apscheduler.scheduler - INFO - Scheduler started
+2025-12-30 10:45:31 - scheduler - INFO - 定时任务调度器已启动
+2025-12-30 10:45:31 - werkzeug - WARNING -  * Debugger is active!
+2025-12-30 10:45:31 - werkzeug - INFO -  * Debugger PIN: 124-602-473
+2025-12-30 10:45:33 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2025 10:45:33] "GET / HTTP/1.1" 200 -
+2025-12-30 10:45:33 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2025 10:45:33] "GET /api/devices HTTP/1.1" 200 -
+2025-12-30 10:45:33 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2025 10:45:33] "GET /api/status HTTP/1.1" 200 -
+2025-12-30 10:45:48 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2025 10:45:48] "GET /test HTTP/1.1" 200 -
+2025-12-30 10:45:48 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2025 10:45:48] "GET /api/status HTTP/1.1" 200 -
+2025-12-30 10:45:52 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2025 10:45:52] "GET / HTTP/1.1" 200 -
+2025-12-30 10:45:52 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2025 10:45:52] "GET /api/devices HTTP/1.1" 200 -
+2025-12-30 10:45:52 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2025 10:45:52] "GET /api/status HTTP/1.1" 200 -
+2025-12-30 10:45:53 - __main__ - INFO - 获取设备 huawei 的备份历史
+2025-12-30 10:45:53 - backup_manager - INFO - 成功获取 7 条备份历史记录
+2025-12-30 10:45:53 - __main__ - INFO - 成功获取 7 条备份记录
+2025-12-30 10:45:53 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2025 10:45:53] "GET /api/backup/history?device_name=huawei HTTP/1.1" 200 -
+2025-12-30 10:46:02 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2025 10:46:02] "GET /test HTTP/1.1" 200 -
+2025-12-30 10:46:02 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2025 10:46:02] "GET /api/status HTTP/1.1" 200 -
+2025-12-30 10:46:05 - __main__ - INFO - 收到测试邮件请求
+2025-12-30 10:46:05 - diff_engine - INFO - 配置差异: 新增 2 行, 删除 1 行
+2025-12-30 10:46:17 - email_notifier - INFO - 告警邮件发送成功
+2025-12-30 10:46:17 - __main__ - INFO - 测试邮件发送成功
+2025-12-30 10:46:17 - werkzeug - INFO - 127.0.0.1 - - [30/Dec/2025 10:46:17] "POST /api/test/email HTTP/1.1" 200 -
